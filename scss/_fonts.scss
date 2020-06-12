@@ -1,7 +1,21 @@
 @font-face {
-  font-family: "Oswald-Bold";
+  font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: normal;
   font-display: auto;
-  src: url("../fonts/Oswald/static/Oswald-Bold.ttf") format("truetype");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../fonts/Georgia/Georgia.ttf") format("truetype");
 }

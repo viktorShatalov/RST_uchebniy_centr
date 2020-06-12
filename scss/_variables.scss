@@ -1,7 +1,47 @@
 // width
-$widthContent: 1360px;
+$width: 1120px;
+
 // colors
-$color_white: rgba(255, 255, 255, 100%);
-$color_basic: rgba(157, 253, 0, 100%);
-$color_bg: rgba(32, 32, 32, 100%);
-$color_bg2: rgba(37, 37, 37, 100%);
+// settings
+$color_white: rgb(255, 255, 255);
+$color_black: rgb(0, 0, 0);
+$color_danger: rgba(255, 0, 0, 100%);
+
+// header
+$color_bg_header-top__bg: rgb(64, 64, 64);
+$color_headers: rgb(0, 0, 0);
+$color_bg_header-top__color: rgb(255, 255, 255);
+$color_bg_header-top__link_color-active: rgb(255, 255, 255);
+$color_bg_header-top__link_color: hsl(0, 0%, 43%);
+$color_bg_header-bottom__row: rgb(255, 255, 255);
+$color_burger-menu: rgb(0, 0, 0);
+$color_header_link: rgb(0, 0, 0);
+$color_mobile-menu-bg: rgba(252, 252, 252, 0.9);
+
+$color_search-bg: rgb(255, 255, 255);
+$color_search-color: rgb(0, 0, 0);
+$color_search-border: rgb(222, 222, 222);
+
+$color_category__link-bg: rgb(64, 64, 64);
+$color_category__link-color: rgb(255, 255, 255);
+$color_bg_category-menu: rgb(255, 255, 255);
+$color_category-menu_text: rgb(64, 64, 64);
+$color_subCategory-menu_text: rgb(102, 102, 102);
+$color_category-menu-border: rgba(0, 0, 0, 0.753);
+
+// main
+$color_text-description: rgba(112, 112, 112, 0.761);
+$color_bg-main: rgb(255, 255, 255);
+
+// footer
+$color_footer-bg: rgb(64, 64, 64);
+$color_footer-color: rgb(255, 255, 255);
+$color_footer-linkMenu: rgb(102, 102, 102);
+$color_footer-linkMenu-active: rgb(102, 102, 102);
+$color_footer-subscribe-btn: rgb(102, 102, 102);
+$color_signature-color: rgb(153, 153, 153);
+$color_signature-bg: rgb(255, 255, 255);
+
+// pagination
+$color_pagination: rgb(71, 74, 76);
+$color_pagination_bg: rgb(244, 244, 244);

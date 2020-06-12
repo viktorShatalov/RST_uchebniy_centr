@@ -1,7 +1,16 @@
-@mixin transition {
-  transition: all 0.5s ease;
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-@mixin textShadow {
-  text-shadow: 0px 4px 7px rgb(0, 0, 0);
+@mixin transition {
+  transition: all 0.3s ease-in-out;
+}
+@mixin transition-modal {
+  transition: all 0.2s ease-in-out;
+}
+@mixin boxShadow {
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
+@mixin hvrOpacity {
+  opacity: 0.7;
 }

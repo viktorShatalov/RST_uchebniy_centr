@@ -12,10 +12,11 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Oswald-Regular";
-  font-size: 18px;
-  background-color: $color_bg;
-  color: #fff;
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+}
+.conteiner {
+  width: $width;
 }
 a {
   text-decoration: none;
