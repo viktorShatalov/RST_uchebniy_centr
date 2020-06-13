@@ -126,18 +126,20 @@ main {
   }
   .our__activity,
   .popular {
+    background-color: $color_sidbar_h2-bg;
+    border-radius: 5px;
+    h2 {
+      font-size: 1.375em;
+      height: 70px;
+      text-transform: uppercase;
+      color: $color_sidbar_h2;
+      padding: 20px 15px;
+    }
     ul {
       background-color: $color_sidbar_h2-bg;
       border-radius: 5px;
       margin-bottom: 20px;
       padding-bottom: 0.3px;
-      h2 {
-        font-size: 1.375em;
-        height: 70px;
-        text-transform: uppercase;
-        color: $color_sidbar_h2;
-        padding: 20px 15px;
-      }
       li {
         background-color: $color_white;
         height: 60px;
@@ -172,7 +174,7 @@ main {
   .our__activity {
     ul {
       li {
-        &:nth-child(6) {
+        &:nth-child(5) {
           a {
             &:before {
               top: 12px;
@@ -258,13 +260,13 @@ main {
     }
   }
   .popular {
+    h2 {
+      height: 85px;
+      padding: 14px 15px;
+    }
     ul {
-      h2 {
-        height: 85px;
-        padding: 14px 15px;
-      }
       li {
-        &:nth-child(3) {
+        &:nth-child(2) {
           a {
             &:before {
               top: 12px;
@@ -525,21 +527,22 @@ main {
           }
         }
         .item__description {
-          p {
+          h3 {
             font-family: "Roboto-Medium";
             font-weight: bold;
             color: $color_article_p;
             margin-bottom: 10px;
+            font-size: 1em;
             line-height: 1.2;
-            &:nth-child(2) {
-              display: flex;
-              justify-content: space-between;
-              span {
-                font-family: "Roboto-Light";
-                font-size: 0.875em;
-                font-weight: lighter;
-                color: $color_content_color-link;
-              }
+          }
+          p {
+            display: flex;
+            justify-content: space-between;
+            span {
+              font-family: "Roboto-Light";
+              font-size: 0.875em;
+              font-weight: lighter;
+              color: $color_content_color-link;
             }
           }
         }

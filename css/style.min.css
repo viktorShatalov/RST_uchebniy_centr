@@ -496,21 +496,27 @@ main .programms li:hover a {
   color: #326594;
 }
 
+main .our__activity,
+main .popular {
+  background-color: #eef1f7;
+  border-radius: 5px;
+}
+
+main .our__activity h2,
+main .popular h2 {
+  font-size: 1.375em;
+  height: 70px;
+  text-transform: uppercase;
+  color: #24527d;
+  padding: 20px 15px;
+}
+
 main .our__activity ul,
 main .popular ul {
   background-color: #eef1f7;
   border-radius: 5px;
   margin-bottom: 20px;
   padding-bottom: 0.3px;
-}
-
-main .our__activity ul h2,
-main .popular ul h2 {
-  font-size: 1.375em;
-  height: 70px;
-  text-transform: uppercase;
-  color: #24527d;
-  padding: 20px 15px;
 }
 
 main .our__activity ul li,
@@ -557,7 +563,7 @@ main .popular ul li:hover a:before {
   content: url(../img/left_sidebar/Layer-hover.png);
 }
 
-main .our__activity ul li:nth-child(6) a:before {
+main .our__activity ul li:nth-child(5) a:before {
   top: 12px;
 }
 
@@ -636,12 +642,12 @@ main .social ul li:hover:nth-child(5)::after {
   content: url(../img/left_sidebar/youtгbe-active.png);
 }
 
-main .popular ul h2 {
+main .popular h2 {
   height: 85px;
   padding: 14px 15px;
 }
 
-main .popular ul li:nth-child(3) a:before {
+main .popular ul li:nth-child(2) a:before {
   top: 12px;
 }
 
@@ -1008,15 +1014,16 @@ main .article .article__items .item .item__img .statistics span:nth-child(2)::be
   top: 3px;
 }
 
-main .article .article__items .item .item__description p {
+main .article .article__items .item .item__description h3 {
   font-family: "Roboto-Medium";
   font-weight: bold;
   color: #444444;
   margin-bottom: 10px;
+  font-size: 1em;
   line-height: 1.2;
 }
 
-main .article .article__items .item .item__description p:nth-child(2) {
+main .article .article__items .item .item__description p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1025,7 +1032,7 @@ main .article .article__items .item .item__description p:nth-child(2) {
           justify-content: space-between;
 }
 
-main .article .article__items .item .item__description p:nth-child(2) span {
+main .article .article__items .item .item__description p span {
   font-family: "Roboto-Light";
   font-size: 0.875em;
   font-weight: lighter;
