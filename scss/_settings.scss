@@ -17,9 +17,11 @@ body {
 }
 .conteiner {
   width: $width;
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
+  color: $color_black;
 }
 ul {
   padding: 0;
@@ -30,4 +32,19 @@ ul {
 img {
   border: 0;
   max-width: 100%;
+}
+.uk-link:hover,
+a:hover {
+  text-decoration: none;
+}
+address,
+blockquote,
+dl,
+fieldset,
+figure,
+ol,
+p,
+pre,
+ul {
+  margin: 0;
 }

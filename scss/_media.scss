@@ -67,7 +67,6 @@
     left: 10px;
     transform: scale(0);
     background-color: $color_mobile-menu-bg;
-    border: 1px solid $color_category-menu-border;
     border-radius: 10px;
     @include transition;
     ul {
@@ -81,9 +80,6 @@
         margin: 0 !important;
         width: 100%;
         padding: 7px 0;
-        &:first-child {
-          border-top: 2px solid $color_category-menu-border;
-        }
         a {
           font-size: 1rem;
           padding: 12px 0;

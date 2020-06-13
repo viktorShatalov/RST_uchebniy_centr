@@ -3,14 +3,26 @@
   flex-wrap: wrap;
 }
 @mixin transition {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 @mixin transition-modal {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 @mixin boxShadow {
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+}
+@mixin boxShadow-input {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 @mixin hvrOpacity {
   opacity: 0.7;
+}
+
+// form mixin
+
+@mixin input {
+  width: 100%;
+  border: 1px solid $color_search-color;
+  border-radius: 5px;
+  font-family: "Georgia";
 }

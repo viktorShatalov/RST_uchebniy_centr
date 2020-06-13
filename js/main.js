@@ -11,8 +11,8 @@ jQuery(document).ready(function () {
 
     // dropdown-phone
 
-    jQuery('.dropdown__btn').click(function () {
-        jQuery('.cabinet__dropdown,.dropdown__btn').toggleClass('active')
+    jQuery('.first').click(function () {
+        jQuery('.dropdown__hide').toggleClass('active')
     });
 
 })
