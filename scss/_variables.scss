@@ -26,6 +26,7 @@ $color_cabinetLink-after: rgb(36, 82, 125);
 $color_cabinetLink-hover-before: rgb(50, 101, 148);
 $color_sidbar_link: rgba(0, 0, 0, 0.7);
 $color_sidbar_h2: rgb(36, 82, 125);
+$color_sidbar_h1: rgb(50, 101, 148);
 $color_sidbar_h2-bg: rgb(238, 241, 247);
 $color_content_color-link: rgb(170, 170, 170);
 $color_content_h3: rgb(10, 10, 10);
@@ -33,6 +34,9 @@ $color_content_about-p: rgb(105, 105, 105);
 $color_article_link: rgb(134, 149, 163);
 $color_article_statistics: rgba(0, 0, 0, 0.65);
 $color_article_p: rgb(68, 68, 68);
+
+// main-page
+$color_p: rgb(43, 43, 35);
 
 // footer
 $color_footer-bg: rgb(59, 72, 100);
@@ -44,3 +48,9 @@ $color_footer-adress-span: rgb(102, 143, 216);
 // pagination
 $color_pagination: rgb(71, 74, 76);
 $color_pagination_bg: rgb(244, 244, 244);
+
+// breadcumbs
+$color_bredcumbs-bg: rgb(247, 249, 252);
+$color_bredcumbs-border: rgb(217, 225, 231);
+$color_bredcumbs-triangle: rgb(69, 109, 178);
+$color_bredcumbs-color: rgb(104, 121, 133);

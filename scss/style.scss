@@ -2,6 +2,7 @@
 @import "_variables";
 @import "_mixin";
 @import "_buttons";
+@import "_modal";
 
 /* общие настройки */
 @import "_settings";
@@ -11,6 +12,9 @@
 
 // main
 @import "_main.scss";
+
+// main-page
+@import "_main-page.scss";
 
 // footer
 @import "_footer.scss";

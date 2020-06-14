@@ -48,3 +48,114 @@ pre,
 ul {
   margin: 0;
 }
+
+h1 {
+  font-family: "Roboto-Medium";
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: $color_sidbar_h1;
+}
+
+// breadcumbs
+#breadcumbs {
+  padding: 23px 0;
+  font-size: 0.95em;
+  background-color: $color_bredcumbs-bg;
+  border-bottom: 1px solid $color_bredcumbs-border;
+  border-top: 1px solid $color_bredcumbs-border;
+  ul {
+    padding: 0 10px;
+    @include flex;
+    li {
+      margin-right: 30px;
+      position: relative;
+      &:first-child {
+        a {
+          &::before {
+            content: url(../img/icon/home-breadcumbs.png);
+            margin-right: 10px;
+          }
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        border: 5px solid transparent;
+        border-left: 6px solid $color_bredcumbs-triangle;
+        top: 4px;
+        right: -25px;
+      }
+      a {
+        white-space: nowrap;
+        color: $color_bredcumbs-color;
+        @include transition;
+        &:hover {
+          color: $color_bredcumbs-triangle;
+        }
+      }
+      &:last-child {
+        &::after {
+          content: none;
+        }
+        a {
+          color: $color_bredcumbs-triangle;
+          border-bottom: 1px solid $color_bredcumbs-triangle;
+          &:hover {
+            opacity: 1;
+            cursor: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+// pagination
+#pagination {
+  padding: 20px 0 10px;
+  ul {
+    @include flex;
+    justify-content: center;
+    li {
+      cursor: pointer;
+      position: relative;
+      &:last-child a,
+      &:last-child span {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      &:first-child {
+        span {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+        &::after {
+          content: none;
+        }
+        a {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+      }
+      &::after {
+        content: "";
+        font-size: 1em;
+        position: absolute;
+        top: 9px;
+        left: 0;
+      }
+      a,
+      span {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding: 10px 0;
+        @include transition;
+        &[aria-current="page"] {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

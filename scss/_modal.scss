@@ -1,35 +1,116 @@
-.modal {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  border-radius: 2px;
-  box-shadow: 0px 0px 59px 0px rgba(35, 19, 0, 0.58);
-  width: 100%;
-  max-width: 1000px;
-  z-index: 6;
+$color_close-bg: rgb(69, 109, 178);
+$color_modal-header: rgb(247, 249, 252);
+$color_modal-border: rgb(217, 225, 231);
+$color_modal-input: rgb(105, 105, 105);
+$color_modal-input-submit: rgb(118, 145, 195);
+$color_modal-p: rgb(138, 138, 138);
+
+.uk-modal-dialog {
+  padding: 30px 0 20px;
+  border-radius: 3px;
+  .header {
+    padding: 22px 10px;
+    background-color: $color_modal-header;
+    position: relative;
+    border-bottom: 1px solid $color_modal-border;
+    border-top: 1px solid $color_modal-border;
+    margin-bottom: 30px;
+    .close__btn {
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+    }
+    h3 {
+      font-size: 1.375em;
+      color: $color_close-bg;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Roboto-Medium";
+    }
+  }
+  .modal__body {
+    form {
+      text-align: center;
+      input {
+        @include input;
+        max-width: 340px;
+        height: 40px;
+        padding: 10px 15px;
+        font-size: 0.8em;
+        color: $color_modal-input;
+        margin: 0 auto 15px;
+        @include transition;
+        font-family: "Roboto-Medium";
+        &::placeholder {
+          font-family: "Roboto-Medium";
+        }
+        &:focus {
+          border-color: $color_modal-input-submit;
+          &::placeholder {
+            color: $color_black;
+          }
+        }
+        &[type="submit"] {
+          max-width: 230px;
+          border-color: $color_modal-input-submit;
+          color: $color_modal-input-submit;
+          background-color: $color_white;
+          text-transform: uppercase;
+          height: 45px;
+          font-size: 0.9em;
+          @include transition;
+          cursor: pointer;
+          &:hover {
+            color: $color_white;
+            background-color: $color_modal-input-submit;
+          }
+        }
+      }
+      p {
+        margin: 5px auto 17px;
+        font-size: 0.95em;
+        font-family: "Roboto-Light";
+        color: $color_modal-p;
+        text-align: left;
+        max-width: 340px;
+        span {
+          color: $color_black;
+        }
+      }
+      .text {
+        font-size: 0.75rem;
+        line-height: 1.2;
+        text-align: center;
+      }
+    }
+  }
 }
-#modal {
+#get_request,
+#question,
+#apply__education {
   .uk-modal-dialog {
-    width: 1000px;
+    width: 100%;
+    max-width: 450px;
   }
 }
-.uk-close {
+.close__btn {
   position: absolute;
-  height: 40px;
-  width: 40px;
-  z-index: 4;
-  top: 20px;
-  right: 20px;
-  border-radius: 4px;
-  opacity: 1;
-  &:after {
-    font-size: 40px;
+  right: 0px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  &::after,
+  &::before {
+    content: "";
     position: absolute;
-    top: 9px;
-    right: 4px;
+    width: 20px;
+    height: 4px;
+    top: 8px;
+    background-color: $color_close-bg;
+    transform: rotate(45deg);
   }
-}
-#myRange {
-  width: 100%;
+  &::before {
+    transform: rotate(-45deg);
+  }
 }
