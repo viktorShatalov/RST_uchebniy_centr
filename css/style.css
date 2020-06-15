@@ -1726,6 +1726,322 @@ main .article .article__items .item .item__description p span {
   padding: 10px 16px;
 }
 
+#outsorsing .head h1 {
+  padding: 35px 0 50px;
+}
+
+#outsorsing .head p {
+  font-family: "Roboto-Light";
+  text-align: justify;
+  line-height: 1.4;
+  margin-bottom: 45px;
+  color: black;
+  font-size: 1.07em;
+}
+
+#outsorsing .head .text {
+  color: dimgray;
+}
+
+#outsorsing .price {
+  border-top: 1px solid #d9e1e7;
+  border-bottom: 1px solid #d9e1e7;
+  padding: 40px 0;
+  margin-bottom: 10px;
+}
+
+#outsorsing .price p {
+  font-family: "Roboto-Medium";
+  font-size: 1.75em;
+  color: #212121;
+}
+
+#outsorsing .price p span {
+  font-family: "Roboto-Regular";
+  font-size: 1.875rem;
+  color: #2f528e;
+}
+
+#outsorsing .price p span:nth-child(2) {
+  font-size: 1rem;
+  color: rgba(33, 33, 33, 0.74);
+  margin-left: 10px;
+}
+
+#outsorsing .outsors__about p,
+#outsorsing .main__advantages p,
+#outsorsing .servises p {
+  font-size: 1.5em;
+  padding: 50px 0 35px;
+  color: #2b2b23;
+  font-weight: bold;
+}
+
+#outsorsing .outsors__about ul li,
+#outsorsing .main__advantages ul li,
+#outsorsing .servises ul li {
+  padding: 0 0 35px 25px;
+  font-family: "Roboto-Light";
+  font-size: 1.07em;
+  line-height: 1.4;
+  color: dimgray;
+  position: relative;
+  text-align: justify;
+  letter-spacing: 0.3px;
+}
+
+#outsorsing .outsors__about ul li::before,
+#outsorsing .main__advantages ul li::before,
+#outsorsing .servises ul li::before {
+  content: "";
+  position: absolute;
+  border: 8px solid transparent;
+  border-left: 9px solid #326594;
+  top: 3px;
+  left: 0;
+}
+
+#outsorsing .outsors__about ul li:last-child,
+#outsorsing .main__advantages ul li:last-child,
+#outsorsing .servises ul li:last-child {
+  border-bottom: 1px solid #d9e1e7;
+}
+
+#outsorsing .main__advantages {
+  border-bottom: 1px solid #d9e1e7;
+  padding: 0 0 25px;
+}
+
+#outsorsing .main__advantages-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#outsorsing .main__advantages-items .item {
+  width: 100%;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px;
+}
+
+#outsorsing .main__advantages-items .item .img {
+  border: 1px solid #376997;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin-right: 20px;
+}
+
+#outsorsing .main__advantages-items .item .img:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#outsorsing .main__advantages-items .item p {
+  font-size: 0.9em;
+  color: #376997;
+  padding: 0;
+  max-width: 220px;
+  width: 100%;
+  font-weight: normal;
+}
+
+#outsorsing .main__advantages-items .item:nth-child(1) .img:after {
+  content: url(../img/content/outsors/advantages1.png);
+}
+
+#outsorsing .main__advantages-items .item:nth-child(2) .img:after {
+  content: url(../img/content/outsors/advantages2.png);
+}
+
+#outsorsing .main__advantages-items .item:nth-child(2) p {
+  max-width: 295px;
+}
+
+#outsorsing .main__advantages-items .item:nth-child(3) .img:after {
+  content: url(../img/content/outsors/advantages3.png);
+}
+
+#outsorsing .main__advantages-items .item:nth-child(4) .img:after {
+  content: url(../img/content/outsors/advantages4.png);
+}
+
+#outsorsing .main__advantages-items .item:nth-child(4) p {
+  max-width: 295px;
+}
+
+#outsorsing .servises {
+  border-bottom: 1px solid #d9e1e7;
+  padding: 0 0 70px;
+}
+
+#outsorsing .servises .servises__items .row {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 7px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin-bottom: 7px;
+}
+
+#outsorsing .servises .servises__items .row:nth-child(1) {
+  -ms-grid-columns: (267px)[3];
+      grid-template-columns: repeat(3, 267px);
+}
+
+#outsorsing .servises .servises__items .row:nth-child(2) {
+  -ms-grid-columns: 267px 2fr;
+      grid-template-columns: 267px 2fr;
+}
+
+#outsorsing .servises .servises__items .item {
+  padding: 24px 24px 20px;
+  border: 1px solid #e4e8ef;
+  border-radius: 4px;
+  text-align: center;
+}
+
+#outsorsing .servises .servises__items .item img {
+  margin-bottom: 20px;
+}
+
+#outsorsing .servises .servises__items .item p {
+  font-size: 0.9em;
+  color: #212121;
+  padding: 0;
+  width: 100%;
+  font-weight: normal;
+}
+
+#outsorsing .servises .servises__items .item:last-child p {
+  max-width: 385px;
+  margin: 0 auto;
+}
+
+#outsorsing .outsourcing__services p {
+  font-size: 1.5em;
+  padding: 50px 0 35px;
+  color: #2b2b23;
+  font-weight: bold;
+}
+
+#outsorsing .outsourcing__services ul li {
+  padding: 0 0 30px 25px;
+  font-family: "Roboto-Light";
+  font-size: 1.075em;
+  line-height: 1.4;
+  color: dimgray;
+  position: relative;
+  text-align: justify;
+}
+
+#outsorsing .outsourcing__services ul li::before {
+  content: "1";
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #326594;
+  color: #326594;
+  padding: 2px 6px 0;
+  font-size: 12px;
+  top: 3px;
+  left: 0;
+  font-family: "Roboto-Medium";
+  background-color: white;
+}
+
+#outsorsing .outsourcing__services ul li:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 3px;
+  width: 1px;
+  height: 100%;
+  background-color: #326594;
+  z-index: -1;
+}
+
+#outsorsing .outsourcing__services ul li:nth-child(2)::before {
+  content: "2";
+}
+
+#outsorsing .outsourcing__services ul li:nth-child(3)::before {
+  content: "3";
+}
+
+#outsorsing .outsourcing__services ul li:nth-child(4)::before {
+  content: "4";
+}
+
+#outsorsing .outsourcing__services ul li:nth-child(4)::after {
+  content: none;
+}
+
+#outsorsing .back__call {
+  border: 1px solid #326594;
+  padding: 30px 0 25px;
+  border-radius: 2px;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+#outsorsing .back__call p {
+  color: #326594;
+  font-size: 1.25em;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+#outsorsing .back__call a {
+  display: block;
+  width: 225px;
+  height: 45px;
+  padding: 13px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #456db2;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 0.95em;
+  border: 1px solid #456db2;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#outsorsing .back__call a:hover {
+  color: white;
+  background-color: #456db2;
+}
+
+#outsorsing .last__description p {
+  font-family: "Roboto-Light";
+  text-align: justify;
+  line-height: 1.4;
+  margin-bottom: 45px;
+  color: dimgray;
+  font-size: 1.07em;
+}
+
 footer .footer__top-row {
   border-top: 1px solid #dee3ed;
 }

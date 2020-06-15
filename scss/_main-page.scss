@@ -292,3 +292,292 @@
     }
   }
 }
+// outsorsing
+#outsorsing {
+  .head {
+    h1 {
+      padding: 35px 0 50px;
+    }
+    p {
+      font-family: "Roboto-Light";
+      text-align: justify;
+      line-height: 1.4;
+      margin-bottom: 45px;
+      color: $color_black;
+      font-size: 1.07em;
+    }
+    .text {
+      color: rgb(105, 105, 105);
+    }
+  }
+  .price {
+    border-top: 1px solid rgb(217, 225, 231);
+    border-bottom: 1px solid rgb(217, 225, 231);
+    padding: 40px 0;
+    margin-bottom: 10px;
+    p {
+      font-family: "Roboto-Medium";
+      font-size: 1.75em;
+      color: rgb(33, 33, 33);
+      span {
+        font-family: "Roboto-Regular";
+        font-size: 1.875rem;
+        color: rgb(47, 82, 142);
+        &:nth-child(2) {
+          font-size: 1rem;
+          color: rgba(33, 33, 33, 0.74);
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .outsors__about,
+  .main__advantages,
+  .servises {
+    p {
+      font-size: 1.5em;
+      padding: 50px 0 35px;
+      color: $color_p;
+      font-weight: bold;
+    }
+    ul {
+      li {
+        padding: 0 0 35px 25px;
+        font-family: "Roboto-Light";
+        font-size: 1.07em;
+        line-height: 1.4;
+        color: rgb(105, 105, 105);
+        position: relative;
+        text-align: justify;
+        letter-spacing: 0.3px;
+        &::before {
+          content: "";
+          position: absolute;
+          border: 8px solid transparent;
+          border-left: 9px solid rgb(50, 101, 148);
+          top: 3px;
+          left: 0;
+        }
+        &:last-child {
+          border-bottom: 1px solid rgb(217, 225, 231);
+        }
+      }
+    }
+  }
+  .main__advantages {
+    border-bottom: 1px solid rgb(217, 225, 231);
+    padding: 0 0 25px;
+    &-items {
+      @include flex;
+      justify-content: space-between;
+      align-items: center;
+      .item {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 45px;
+        .img {
+          border: 1px solid rgb(55, 105, 151);
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          position: relative;
+          margin-right: 20px;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        p {
+          font-size: 0.9em;
+          color: rgb(55, 105, 151);
+          padding: 0;
+          max-width: 220px;
+          width: 100%;
+          font-weight: normal;
+        }
+        &:nth-child(1) {
+          .img {
+            &:after {
+              content: url(../img/content/outsors/advantages1.png);
+            }
+          }
+        }
+        &:nth-child(2) {
+          .img {
+            &:after {
+              content: url(../img/content/outsors/advantages2.png);
+            }
+          }
+          p {
+            max-width: 295px;
+          }
+        }
+        &:nth-child(3) {
+          .img {
+            &:after {
+              content: url(../img/content/outsors/advantages3.png);
+            }
+          }
+        }
+        &:nth-child(4) {
+          .img {
+            &:after {
+              content: url(../img/content/outsors/advantages4.png);
+            }
+          }
+          p {
+            max-width: 295px;
+          }
+        }
+      }
+    }
+  }
+  .servises {
+    border-bottom: 1px solid rgb(217, 225, 231);
+    padding: 0 0 70px;
+    .servises__items {
+      .row {
+        display: grid;
+        grid-gap: 7px;
+        grid-template-rows: 1fr;
+        margin-bottom: 7px;
+        &:nth-child(1) {
+          grid-template-columns: repeat(3, 267px);
+        }
+        &:nth-child(2) {
+          grid-template-columns: 267px 2fr;
+        }
+      }
+      .item {
+        padding: 24px 24px 20px;
+        border: 1px solid rgb(228, 232, 239);
+        border-radius: 4px;
+        text-align: center;
+        img {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 0.9em;
+          color: rgb(33, 33, 33);
+          padding: 0;
+          width: 100%;
+          font-weight: normal;
+        }
+        &:last-child {
+          p {
+            max-width: 385px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  .outsourcing__services {
+    p {
+      font-size: 1.5em;
+      padding: 50px 0 35px;
+      color: $color_p;
+      font-weight: bold;
+    }
+    ul {
+      li {
+        padding: 0 0 30px 25px;
+        font-family: "Roboto-Light";
+        font-size: 1.075em;
+        line-height: 1.4;
+        color: rgb(105, 105, 105);
+        position: relative;
+        text-align: justify;
+        &::before {
+          content: "1";
+          position: absolute;
+          border-radius: 50%;
+          border: 1px solid rgb(50, 101, 148);
+          color: rgb(50, 101, 148);
+          padding: 2px 6px 0;
+          font-size: 12px;
+          top: 3px;
+          left: 0;
+          font-family: "Roboto-Medium";
+          background-color: $color_white;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          left: 10px;
+          top: 3px;
+          width: 1px;
+          height: 100%;
+          background-color: rgb(50, 101, 148);
+          z-index: -1;
+        }
+        &:nth-child(2) {
+          &::before {
+            content: "2";
+          }
+        }
+        &:nth-child(3) {
+          &::before {
+            content: "3";
+          }
+        }
+        &:nth-child(4) {
+          &::before {
+            content: "4";
+          }
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+  .back__call {
+    border: 1px solid rgb(50, 101, 148);
+    padding: 30px 0 25px;
+    border-radius: 2px;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    p {
+      color: rgb(50, 101, 148);
+      font-size: 1.25em;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      width: 225px;
+      height: 45px;
+      padding: 13px 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color_top_row-color;
+      background-color: $color_white;
+      border-radius: 5px;
+      font-size: 0.95em;
+      border: 1px solid $color_top_row-color;
+      margin: 0 auto;
+      @include transition;
+      &:hover {
+        color: $color_white;
+        background-color: $color_top_row-color;
+      }
+    }
+  }
+  .last__description {
+    p {
+      font-family: "Roboto-Light";
+      text-align: justify;
+      line-height: 1.4;
+      margin-bottom: 45px;
+      color: rgb(105, 105, 105);
+      font-size: 1.07em;
+    }
+  }
+}
