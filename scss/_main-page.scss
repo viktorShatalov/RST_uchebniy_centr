@@ -1,4 +1,8 @@
+// #administrative__responsibility
 #administrative__responsibility {
+  h1 {
+    margin-bottom: 40px;
+  }
   p {
     font-size: 1.5em;
     padding: 50px 0 35px;
@@ -79,6 +83,212 @@
           content: none;
         }
       }
+    }
+  }
+}
+// arhiv
+
+#arhiv {
+  .head {
+    display: flex;
+    align-items: center;
+    height: 76px;
+    background-color: rgb(246, 247, 249);
+    border-radius: 3px;
+    position: relative;
+    margin: 3px 0 30px;
+    &::before {
+      content: url(../img/content/arhiv/icon_pseudo.png);
+      position: absolute;
+    }
+    &::after {
+      content: url(../img/content/arhiv/header_icon.png);
+      position: absolute;
+      left: 15px;
+    }
+    h1 {
+      padding-left: 115px;
+      position: relative;
+    }
+  }
+  .search {
+    padding: 0 15px 30px;
+    width: 100%;
+    form {
+      position: relative;
+      input {
+        @include input;
+        padding: 8px 13px;
+        @include transition;
+        &::placeholder {
+          color: $color_search-color;
+          font-size: 0.9em;
+        }
+        &:focus {
+          @include boxShadow-input;
+        }
+      }
+      button {
+        position: absolute;
+        background-color: transparent;
+        top: 9px;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .load__items {
+    .item {
+      @include flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgb(217, 225, 231);
+      height: 150px;
+      width: 100%;
+      padding: 0 20px 0 60px;
+      border-radius: 5px;
+      @include transition;
+      &:last-child {
+        border-bottom: 1px solid rgb(217, 225, 231);
+      }
+      &:hover {
+        @include boxShadow;
+        .download__btn {
+          a {
+            background-color: rgb(69, 109, 178);
+            color: $color_white;
+            &::after {
+              content: url(../img/content/arhiv/load_btn-active.png);
+            }
+          }
+        }
+      }
+      .item-name {
+        position: relative;
+        p {
+          color: rgb(63, 63, 63);
+          font-size: 1.05em;
+          width: 100%;
+          max-width: 565px;
+          text-align: justify;
+        }
+        &::before {
+          content: url(../img/content/arhiv/icon_item.png);
+          position: absolute;
+          left: -40px;
+          top: 0;
+        }
+      }
+      .download__btn {
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: 1px solid rgb(69, 109, 178);
+          border-radius: 5px;
+          background-color: $color_white;
+          color: rgb(69, 109, 178);
+          position: relative;
+          padding: 14px 45px 13px 25px;
+          text-transform: uppercase;
+          font-size: 0.9em;
+          @include transition;
+          &::after {
+            content: url(../img/content/arhiv/load_btn.png);
+            position: absolute;
+            top: 11px;
+            right: 13px;
+          }
+        }
+      }
+    }
+  }
+  .info {
+    border-top: 1px solid rgb(217, 225, 231);
+    padding: 55px 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto-Light";
+    a {
+      padding: 30px;
+      font-family: "Roboto-Medium";
+      font-weight: bold;
+      font-size: 1.25em;
+      position: relative;
+      &::before {
+        content: url(../img/content/arhiv/phone.png);
+        position: absolute;
+        left: 0;
+        top: 30px;
+      }
+    }
+  }
+  .form {
+    form {
+      padding: 25px 30px 30px;
+      background-color: rgb(247, 249, 252);
+      border: 1px solid rgb(217, 225, 231);
+      border-radius: 5px;
+      .row {
+        @include flex;
+        justify-content: space-between;
+      }
+      .btn {
+        text-align: center;
+      }
+      input {
+        @include input;
+        max-width: 340px;
+        height: 42px;
+        background-color: $color_white;
+        font-family: "Georgia";
+        padding: 10px 15px;
+        border: 1px solid rgb(217, 225, 231);
+        margin-bottom: 25px;
+        @include transition;
+        &::placeholder {
+          color: rgb(105, 105, 105);
+          font-family: "Georgia";
+        }
+        &:focus {
+          border-color: $color_modal-input-submit;
+          &::placeholder {
+            color: $color_black;
+          }
+        }
+        &[type="checkbox"] {
+          width: 10px;
+          height: 10px;
+          margin-bottom: 0;
+          margin-right: 15px;
+        }
+        &[type="submit"] {
+          max-width: 230px;
+          border-color: rgb(69, 109, 178);
+          color: rgb(69, 109, 178);
+          background-color: $color_white;
+          text-transform: uppercase;
+          height: 45px;
+          font-size: 0.9em;
+          @include transition;
+          cursor: pointer;
+          margin-bottom: 0;
+          &:hover {
+            color: $color_white;
+            background-color: rgb(69, 109, 178);
+          }
+        }
+      }
+    }
+    label[for="check"] {
+      background-color: rgb(238, 241, 247);
+      color: rgb(177, 186, 198);
+      max-width: 340px;
+      width: 100%;
+      height: 42px;
+      border-radius: 5px;
+      font-family: "Georgia";
+      padding: 10px 16px;
     }
   }
 }

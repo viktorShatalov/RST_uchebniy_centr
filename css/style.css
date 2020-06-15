@@ -246,7 +246,6 @@ ul {
 h1 {
   font-family: "Roboto-Medium";
   font-size: 2em;
-  margin-bottom: 40px;
   color: #326594;
 }
 
@@ -312,7 +311,7 @@ h1 {
 }
 
 #pagination {
-  padding: 20px 0 10px;
+  padding: 40px 0;
 }
 
 #pagination ul {
@@ -329,49 +328,55 @@ h1 {
 #pagination ul li {
   cursor: pointer;
   position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #f6f7f9;
+  border: 1px solid #eff2f5;
+  border-radius: 4px;
+  font-family: "Roboto-Light";
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  margin: 0 5px;
+  padding: 5px 0px;
+  text-align: center;
+  position: relative;
 }
 
-#pagination ul li:last-child a,
-#pagination ul li:last-child span {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+#pagination ul li:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  border: 1px solid transparent;
 }
 
-#pagination ul li:first-child span {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+#pagination ul li:first-child, #pagination ul li:last-child {
+  width: 0;
+  height: 0;
+  border: none;
 }
 
-#pagination ul li:first-child::after {
-  content: none;
-}
-
-#pagination ul li:first-child a {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-#pagination ul li::after {
-  content: "";
-  font-size: 1em;
+#pagination ul li:first-child::after, #pagination ul li:last-child::after {
+  content: url(../img/icon/pagination__next.png);
   position: absolute;
-  top: 9px;
+  top: 50%;
+  left: -20px;
+}
+
+#pagination ul li:last-child::after {
+  content: url(../img/icon/pagination__next.png);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: -30px;
   left: 0;
 }
 
-#pagination ul li a,
-#pagination ul li span {
+#pagination ul li a {
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  padding: 10px 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-#pagination ul li a[aria-current="page"],
-#pagination ul li span[aria-current="page"] {
+#pagination ul li a[aria-current="page"] {
   font-weight: bold;
 }
 
@@ -1325,6 +1330,10 @@ main .article .article__items .item .item__description p span {
   color: #aaaaaa;
 }
 
+#administrative__responsibility h1 {
+  margin-bottom: 40px;
+}
+
 #administrative__responsibility p {
   font-size: 1.5em;
   padding: 50px 0 35px;
@@ -1409,6 +1418,312 @@ main .article .article__items .item .item__description p span {
 
 #administrative__responsibility ul.second__content li:nth-child(3)::after {
   content: none;
+}
+
+#arhiv .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 76px;
+  background-color: #f6f7f9;
+  border-radius: 3px;
+  position: relative;
+  margin: 3px 0 30px;
+}
+
+#arhiv .head::before {
+  content: url(../img/content/arhiv/icon_pseudo.png);
+  position: absolute;
+}
+
+#arhiv .head::after {
+  content: url(../img/content/arhiv/header_icon.png);
+  position: absolute;
+  left: 15px;
+}
+
+#arhiv .head h1 {
+  padding-left: 115px;
+  position: relative;
+}
+
+#arhiv .search {
+  padding: 0 15px 30px;
+  width: 100%;
+}
+
+#arhiv .search form {
+  position: relative;
+}
+
+#arhiv .search form input {
+  width: 100%;
+  border: 1px solid #dee3ed;
+  border-radius: 5px;
+  font-family: "Georgia";
+  padding: 8px 13px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#arhiv .search form input::-webkit-input-placeholder {
+  color: #dee3ed;
+  font-size: 0.9em;
+}
+
+#arhiv .search form input:-ms-input-placeholder {
+  color: #dee3ed;
+  font-size: 0.9em;
+}
+
+#arhiv .search form input::-ms-input-placeholder {
+  color: #dee3ed;
+  font-size: 0.9em;
+}
+
+#arhiv .search form input::placeholder {
+  color: #dee3ed;
+  font-size: 0.9em;
+}
+
+#arhiv .search form input:focus {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+#arhiv .search form button {
+  position: absolute;
+  background-color: transparent;
+  top: 9px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#arhiv .load__items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #d9e1e7;
+  height: 150px;
+  width: 100%;
+  padding: 0 20px 0 60px;
+  border-radius: 5px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#arhiv .load__items .item:last-child {
+  border-bottom: 1px solid #d9e1e7;
+}
+
+#arhiv .load__items .item:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+#arhiv .load__items .item:hover .download__btn a {
+  background-color: #456db2;
+  color: white;
+}
+
+#arhiv .load__items .item:hover .download__btn a::after {
+  content: url(../img/content/arhiv/load_btn-active.png);
+}
+
+#arhiv .load__items .item .item-name {
+  position: relative;
+}
+
+#arhiv .load__items .item .item-name p {
+  color: #3f3f3f;
+  font-size: 1.05em;
+  width: 100%;
+  max-width: 565px;
+  text-align: justify;
+}
+
+#arhiv .load__items .item .item-name::before {
+  content: url(../img/content/arhiv/icon_item.png);
+  position: absolute;
+  left: -40px;
+  top: 0;
+}
+
+#arhiv .load__items .item .download__btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #456db2;
+  border-radius: 5px;
+  background-color: white;
+  color: #456db2;
+  position: relative;
+  padding: 14px 45px 13px 25px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#arhiv .load__items .item .download__btn a::after {
+  content: url(../img/content/arhiv/load_btn.png);
+  position: absolute;
+  top: 11px;
+  right: 13px;
+}
+
+#arhiv .info {
+  border-top: 1px solid #d9e1e7;
+  padding: 55px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto-Light";
+}
+
+#arhiv .info a {
+  padding: 30px;
+  font-family: "Roboto-Medium";
+  font-weight: bold;
+  font-size: 1.25em;
+  position: relative;
+}
+
+#arhiv .info a::before {
+  content: url(../img/content/arhiv/phone.png);
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+
+#arhiv .form form {
+  padding: 25px 30px 30px;
+  background-color: #f7f9fc;
+  border: 1px solid #d9e1e7;
+  border-radius: 5px;
+}
+
+#arhiv .form form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#arhiv .form form .btn {
+  text-align: center;
+}
+
+#arhiv .form form input {
+  width: 100%;
+  border: 1px solid #dee3ed;
+  border-radius: 5px;
+  font-family: "Georgia";
+  max-width: 340px;
+  height: 42px;
+  background-color: white;
+  font-family: "Georgia";
+  padding: 10px 15px;
+  border: 1px solid #d9e1e7;
+  margin-bottom: 25px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#arhiv .form form input::-webkit-input-placeholder {
+  color: dimgray;
+  font-family: "Georgia";
+}
+
+#arhiv .form form input:-ms-input-placeholder {
+  color: dimgray;
+  font-family: "Georgia";
+}
+
+#arhiv .form form input::-ms-input-placeholder {
+  color: dimgray;
+  font-family: "Georgia";
+}
+
+#arhiv .form form input::placeholder {
+  color: dimgray;
+  font-family: "Georgia";
+}
+
+#arhiv .form form input:focus {
+  border-color: #7691c3;
+}
+
+#arhiv .form form input:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+#arhiv .form form input:focus:-ms-input-placeholder {
+  color: black;
+}
+
+#arhiv .form form input:focus::-ms-input-placeholder {
+  color: black;
+}
+
+#arhiv .form form input:focus::placeholder {
+  color: black;
+}
+
+#arhiv .form form input[type="checkbox"] {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+#arhiv .form form input[type="submit"] {
+  max-width: 230px;
+  border-color: #456db2;
+  color: #456db2;
+  background-color: white;
+  text-transform: uppercase;
+  height: 45px;
+  font-size: 0.9em;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+#arhiv .form form input[type="submit"]:hover {
+  color: white;
+  background-color: #456db2;
+}
+
+#arhiv .form label[for="check"] {
+  background-color: #eef1f7;
+  color: #b1bac6;
+  max-width: 340px;
+  width: 100%;
+  height: 42px;
+  border-radius: 5px;
+  font-family: "Georgia";
+  padding: 10px 16px;
 }
 
 footer .footer__top-row {
