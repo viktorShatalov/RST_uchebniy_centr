@@ -184,6 +184,20 @@ main {
       }
     }
   }
+  .additional__programs {
+    ul {
+      li {
+        &:nth-child(3),
+        &:nth-child(8) {
+          a {
+            &:before {
+              top: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
   .social {
     margin-bottom: 20px;
     border: 1px solid $color_sidbar_h2-bg;

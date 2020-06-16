@@ -858,6 +858,10 @@ main .our__activity ul li:nth-child(5) a:before {
   top: 12px;
 }
 
+main .additional__programs ul li:nth-child(3) a:before, main .additional__programs ul li:nth-child(8) a:before {
+  top: 12px;
+}
+
 main .social {
   margin-bottom: 20px;
   border: 1px solid #eef1f7;
