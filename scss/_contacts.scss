@@ -1,0 +1,79 @@
+#contacts {
+  font-size: 1.075em;
+  text-align: justify;
+  h1 {
+    margin-bottom: 45px;
+    padding: 0 20px;
+  }
+  .top__row,
+  .center__row,
+  .bootom__row {
+    padding: 0 20px 75px;
+    border-bottom: 1px solid rgb(217, 225, 231);
+  }
+  .top__row,
+  .center__row {
+    p {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 15px;
+      margin-bottom: 25px;
+      span {
+        &:nth-child(2) {
+          font-family: "Roboto-Light";
+          color: rgb(105, 105, 105);
+        }
+      }
+    }
+  }
+  .info {
+    margin-bottom: 55px;
+    padding: 0 20px;
+  }
+  .center__row {
+    p {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+  .map {
+    padding: 15px 0;
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid rgb(217, 225, 231);
+    a {
+      color: rgb(74, 112, 179);
+      font-family: "Roboto-Light";
+      position: relative;
+      border-bottom: 1px solid rgb(74, 112, 179);
+      @include transition;
+      &::before {
+        content: url(../img/icon/map_icon.png);
+        position: absolute;
+        top: 0;
+        left: -35px;
+      }
+      &:hover {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+  .bootom__row {
+    border-bottom: none;
+    p {
+      padding: 55px 0 30px;
+      span {
+        color: rgb(74, 112, 179);
+      }
+    }
+    ul {
+      li {
+        font-family: "Roboto-Light";
+        color: rgb(105, 105, 105);
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .content__form {
+    padding: 0 20px;
+  }
+}

@@ -128,7 +128,6 @@ h1 {
       margin: 0 5px;
       padding: 5px 0px;
       text-align: center;
-      position: relative;
       &:hover {
         @include boxShadow;
         background-color: $color_white;
@@ -152,6 +151,16 @@ h1 {
           transform: rotate(180deg);
           right: -30px;
           left: 0;
+        }
+      }
+      &:nth-child(6) {
+        background-color: transparent;
+        border: 1px solid transparent;
+        font-family: "Roboto-Medium";
+        &:hover {
+          box-shadow: none;
+          background-color: transparent;
+          border: 1px solid transparent;
         }
       }
       a {
