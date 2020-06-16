@@ -697,3 +697,54 @@
     }
   }
 }
+// reviews
+#reviews {
+  .head {
+    h1 {
+      padding: 50px 0;
+    }
+    .description {
+      font-family: "Roboto-Light";
+      text-align: justify;
+      font-size: 1.075em;
+    }
+  }
+  .reviews__items {
+    padding: 0 5px;
+    margin-top: 55px;
+    border-bottom: 1px solid rgb(217, 225, 231);
+    @include flex;
+    justify-content: space-between;
+    .item {
+      width: 100%;
+      max-width: 257px;
+      padding: 15px;
+      margin-bottom: 50px;
+      border-radius: 4px;
+      @include transition;
+      .img {
+        margin-bottom: 20px;
+      }
+      .item__description {
+        font-size: 1.075em;
+        font-weight: bold;
+        color: rgb(43, 43, 35);
+        p {
+          margin-bottom: 10px;
+          &:nth-child(2) {
+            font-family: "Roboto-Light";
+            font-size: 0.95rem;
+            font-weight: normal;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: rgb(101, 101, 101);
+          }
+        }
+      }
+      &:hover {
+        @include boxShadow;
+      }
+    }
+  }
+}

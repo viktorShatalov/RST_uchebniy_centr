@@ -392,6 +392,12 @@ h1 {
   font-weight: bold;
 }
 
+.uk-slidenav-next::after,
+.uk-slidenav-previous::after {
+  content: ">";
+  position: absolute;
+}
+
 #header .top__row {
   background-color: #eef1f7;
   padding: 27px 0 22px;
@@ -2198,6 +2204,76 @@ main .article .article__items .item .item__description p span {
 }
 
 #catalog__articles .catalog__articles-items .item:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+#reviews .head h1 {
+  padding: 50px 0;
+}
+
+#reviews .head .description {
+  font-family: "Roboto-Light";
+  text-align: justify;
+  font-size: 1.075em;
+}
+
+#reviews .reviews__items {
+  padding: 0 5px;
+  margin-top: 55px;
+  border-bottom: 1px solid #d9e1e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#reviews .reviews__items .item {
+  width: 100%;
+  max-width: 257px;
+  padding: 15px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#reviews .reviews__items .item .img {
+  margin-bottom: 20px;
+}
+
+#reviews .reviews__items .item .item__description {
+  font-size: 1.075em;
+  font-weight: bold;
+  color: #2b2b23;
+}
+
+#reviews .reviews__items .item .item__description p {
+  margin-bottom: 10px;
+}
+
+#reviews .reviews__items .item .item__description p:nth-child(2) {
+  font-family: "Roboto-Light";
+  font-size: 0.95rem;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #656565;
+}
+
+#reviews .reviews__items .item:hover {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
 }

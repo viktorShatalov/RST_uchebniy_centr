@@ -173,3 +173,11 @@ h1 {
     }
   }
 }
+// lightbox
+.uk-slidenav-next,
+.uk-slidenav-previous {
+  &::after {
+    content: ">";
+    position: absolute;
+  }
+}
