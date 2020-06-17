@@ -201,6 +201,7 @@
 body {
   font-family: "Roboto-Regular";
   font-size: 16px;
+  text-align: justify;
 }
 
 .conteiner {
@@ -251,6 +252,7 @@ h1 {
 
 #breadcumbs {
   padding: 23px 0;
+  margin-bottom: 40px;
   font-size: 0.95em;
   background-color: #f7f9fc;
   border-bottom: 1px solid #d9e1e7;
@@ -657,10 +659,6 @@ h1 {
   100% {
     opacity: 1;
   }
-}
-
-main {
-  padding: 40px 0;
 }
 
 main .conteiner {
@@ -1369,7 +1367,6 @@ main .article .article__items .item .item__description p span {
   line-height: 1.4;
   color: dimgray;
   position: relative;
-  text-align: justify;
 }
 
 #administrative__responsibility ul.first__content li::before {
@@ -1402,7 +1399,6 @@ main .article .article__items .item .item__description p span {
   line-height: 1.4;
   color: dimgray;
   position: relative;
-  text-align: justify;
 }
 
 #administrative__responsibility ul.second__content li::before {
@@ -1440,6 +1436,34 @@ main .article .article__items .item .item__description p span {
 
 #administrative__responsibility ul.second__content li:nth-child(3)::after {
   content: none;
+}
+
+#arhiv .info {
+  border-top: 1px solid #d9e1e7;
+  padding: 55px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto-Light";
+}
+
+#arhiv .info a {
+  padding: 30px;
+  font-family: "Roboto-Medium";
+  font-weight: bold;
+  font-size: 1.25em;
+  position: relative;
+}
+
+#arhiv .info a::before {
+  content: url(../img/content/arhiv/phone.png);
+  position: absolute;
+  left: 0;
+  top: 30px;
 }
 
 #arhiv .head {
@@ -1572,7 +1596,6 @@ main .article .article__items .item .item__description p span {
   font-size: 1.05em;
   width: 100%;
   max-width: 565px;
-  text-align: justify;
 }
 
 #arhiv .load__items .item .item-name::before {
@@ -1603,34 +1626,6 @@ main .article .article__items .item .item__description p span {
   position: absolute;
   top: 11px;
   right: 13px;
-}
-
-#arhiv .info {
-  border-top: 1px solid #d9e1e7;
-  padding: 55px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: "Roboto-Light";
-}
-
-#arhiv .info a {
-  padding: 30px;
-  font-family: "Roboto-Medium";
-  font-weight: bold;
-  font-size: 1.25em;
-  position: relative;
-}
-
-#arhiv .info a::before {
-  content: url(../img/content/arhiv/phone.png);
-  position: absolute;
-  left: 0;
-  top: 30px;
 }
 
 .content__form form {
@@ -1754,7 +1749,6 @@ main .article .article__items .item .item__description p span {
 
 #outsorsing .head p {
   font-family: "Roboto-Light";
-  text-align: justify;
   line-height: 1.4;
   margin-bottom: 45px;
   color: black;
@@ -1808,7 +1802,6 @@ main .article .article__items .item .item__description p span {
   line-height: 1.4;
   color: dimgray;
   position: relative;
-  text-align: justify;
   letter-spacing: 0.3px;
 }
 
@@ -1973,7 +1966,6 @@ main .article .article__items .item .item__description p span {
   line-height: 1.4;
   color: dimgray;
   position: relative;
-  text-align: justify;
 }
 
 #outsorsing .outsourcing__services ul li::before {
@@ -2057,7 +2049,6 @@ main .article .article__items .item .item__description p span {
 
 #outsorsing .last__description p {
   font-family: "Roboto-Light";
-  text-align: justify;
   line-height: 1.4;
   margin-bottom: 45px;
   color: dimgray;
@@ -2196,7 +2187,6 @@ main .article .article__items .item .item__description p span {
 
 #catalog__articles .catalog__articles-items .item .item__description .description_text p {
   font-family: "Roboto-Light";
-  text-align: justify;
   font-size: 1.075em;
   margin-top: 20px;
   width: 100%;
@@ -2214,7 +2204,6 @@ main .article .article__items .item .item__description p span {
 
 #reviews .head .description {
   font-family: "Roboto-Light";
-  text-align: justify;
   font-size: 1.075em;
 }
 
@@ -2276,6 +2265,210 @@ main .article .article__items .item .item__description p span {
 #reviews .reviews__items .item:hover {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+#programms .info {
+  border-top: 1px solid #d9e1e7;
+  padding: 55px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto-Light";
+}
+
+#programms .info a {
+  padding: 30px;
+  font-family: "Roboto-Medium";
+  font-weight: bold;
+  font-size: 1.25em;
+  position: relative;
+}
+
+#programms .info a::before {
+  content: url(../img/content/arhiv/phone.png);
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+
+#programms .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 76px;
+  background-color: #f6f7f9;
+  border-radius: 3px;
+  position: relative;
+  margin: 3px 0 30px;
+}
+
+#programms .head::before {
+  content: url(../img/content/arhiv/icon_pseudo.png);
+  position: absolute;
+}
+
+#programms .head::after {
+  content: url(../img/programms/programms.png);
+  position: absolute;
+  left: 15px;
+}
+
+#programms .head h1 {
+  padding-left: 115px;
+  position: relative;
+}
+
+#programms .programms__items,
+#programms .content__form {
+  padding: 0 20px;
+}
+
+#programms .info {
+  padding: 0 20px 50px;
+  border-top: none;
+}
+
+#programms .item__category .category-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 16px 4px;
+  background-color: #f7f9fc;
+  border-radius: 4px;
+  border: 1px solid #d9e1e7;
+  margin: 0 -20px 40px -20px;
+}
+
+#programms .item__category .category-name img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 14px;
+}
+
+#programms .item__category .category-name h2 {
+  color: #326594;
+  font-size: 1.25em;
+  font-family: "Roboto-Medium";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 0;
+}
+
+#programms .item__category .category-description p {
+  font-family: "Roboto-Light";
+  font-size: 1.075em;
+  color: #3a3a3a;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+#programms .sub-category .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 105px 1fr;
+      grid-template-columns: 3fr 105px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #d9e1e7;
+  margin: 0 -20px 0 -20px;
+  padding: 20px;
+  height: 125px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border-radius: 4px;
+}
+
+#programms .sub-category .item:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+#programms .sub-category .item:hover .subcategory__name h3::before {
+  border-left-color: #456db2;
+}
+
+#programms .sub-category .item:hover .download__btn a {
+  background-color: #456db2;
+  color: white;
+}
+
+#programms .sub-category .item:hover .download__btn a::after {
+  content: url(../img/content/arhiv/load_btn-active.png);
+}
+
+#programms .sub-category .item:last-child {
+  border-bottom: 1px solid #d9e1e7;
+  margin-bottom: 70px;
+}
+
+#programms .sub-category .item .subcategory__name h3 {
+  font-size: 1.075em;
+  font-weight: normal;
+  color: #272626;
+  padding-left: 32px;
+  position: relative;
+  max-width: 430px;
+  text-align: left;
+}
+
+#programms .sub-category .item .subcategory__name h3::before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  top: 5px;
+  left: 0;
+  border: 8px solid transparent;
+  border-left: 9px solid #d1d7dc;
+}
+
+#programms .sub-category .item .price span {
+  color: #4e78a0;
+  font-size: 1.075em;
+  font-weight: bold;
+}
+
+#programms .sub-category .item .download__btn a {
+  display: block;
+  width: 225px;
+  height: 45px;
+  padding: 13px 16px;
+  border: 1px solid #456db2;
+  border-radius: 5px;
+  background-color: white;
+  color: #456db2;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#programms .sub-category .item .download__btn a::after {
+  content: url(../img/content/arhiv/load_btn.png);
+  position: absolute;
+  top: 11px;
+  right: 13px;
+}
+
+#programms .content__form {
+  margin-bottom: 100px;
 }
 
 #contacts {

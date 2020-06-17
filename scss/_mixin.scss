@@ -18,6 +18,29 @@
   opacity: 0.7;
 }
 
+@mixin info {
+  .info {
+    border-top: 1px solid rgb(217, 225, 231);
+    padding: 55px 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto-Light";
+    a {
+      padding: 30px;
+      font-family: "Roboto-Medium";
+      font-weight: bold;
+      font-size: 1.25em;
+      position: relative;
+      &::before {
+        content: url(../img/content/arhiv/phone.png);
+        position: absolute;
+        left: 0;
+        top: 30px;
+      }
+    }
+  }
+}
+
 // form mixin
 
 @mixin input {

@@ -16,7 +16,7 @@
       line-height: 1.4;
       color: rgb(105, 105, 105);
       position: relative;
-      text-align: justify;
+
       &::before {
         content: "";
         position: absolute;
@@ -46,7 +46,7 @@
       line-height: 1.4;
       color: rgb(105, 105, 105);
       position: relative;
-      text-align: justify;
+
       &::before {
         content: "1";
         position: absolute;
@@ -89,6 +89,7 @@
 // arhiv
 
 #arhiv {
+  @include info;
   .head {
     display: flex;
     align-items: center;
@@ -170,7 +171,6 @@
           font-size: 1.05em;
           width: 100%;
           max-width: 565px;
-          text-align: justify;
         }
         &::before {
           content: url(../img/content/arhiv/icon_item.png);
@@ -200,26 +200,6 @@
             right: 13px;
           }
         }
-      }
-    }
-  }
-  .info {
-    border-top: 1px solid rgb(217, 225, 231);
-    padding: 55px 0;
-    display: flex;
-    flex-direction: column;
-    font-family: "Roboto-Light";
-    a {
-      padding: 30px;
-      font-family: "Roboto-Medium";
-      font-weight: bold;
-      font-size: 1.25em;
-      position: relative;
-      &::before {
-        content: url(../img/content/arhiv/phone.png);
-        position: absolute;
-        left: 0;
-        top: 30px;
       }
     }
   }
@@ -301,7 +281,7 @@
     }
     p {
       font-family: "Roboto-Light";
-      text-align: justify;
+
       line-height: 1.4;
       margin-bottom: 45px;
       color: $color_black;
@@ -349,7 +329,7 @@
         line-height: 1.4;
         color: rgb(105, 105, 105);
         position: relative;
-        text-align: justify;
+
         letter-spacing: 0.3px;
         &::before {
           content: "";
@@ -493,7 +473,7 @@
         line-height: 1.4;
         color: rgb(105, 105, 105);
         position: relative;
-        text-align: justify;
+
         &::before {
           content: "1";
           position: absolute;
@@ -574,7 +554,7 @@
   .last__description {
     p {
       font-family: "Roboto-Light";
-      text-align: justify;
+
       line-height: 1.4;
       margin-bottom: 45px;
       color: rgb(105, 105, 105);
@@ -683,7 +663,7 @@
         .description_text {
           p {
             font-family: "Roboto-Light";
-            text-align: justify;
+
             font-size: 1.075em;
             margin-top: 20px;
             width: 100%;
@@ -705,7 +685,7 @@
     }
     .description {
       font-family: "Roboto-Light";
-      text-align: justify;
+
       font-size: 1.075em;
     }
   }
@@ -746,5 +726,162 @@
         @include boxShadow;
       }
     }
+  }
+}
+// programms
+#programms {
+  @include info;
+  .head {
+    display: flex;
+    align-items: center;
+    height: 76px;
+    background-color: rgb(246, 247, 249);
+    border-radius: 3px;
+    position: relative;
+    margin: 3px 0 30px;
+    &::before {
+      content: url(../img/content/arhiv/icon_pseudo.png);
+      position: absolute;
+    }
+    &::after {
+      content: url(../img/programms/programms.png);
+      position: absolute;
+      left: 15px;
+    }
+    h1 {
+      padding-left: 115px;
+      position: relative;
+    }
+  }
+  .programms__items,
+  .content__form {
+    padding: 0 20px;
+  }
+  .info {
+    padding: 0 20px 50px;
+    border-top: none;
+  }
+  .item__category {
+    .category-name {
+      @include flex;
+      align-items: center;
+      padding: 4px 16px 4px;
+      background-color: rgb(247, 249, 252);
+      border-radius: 4px;
+      border: 1px solid rgb(217, 225, 231);
+      margin: 0 -20px 40px -20px;
+      img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        margin-right: 14px;
+      }
+      h2 {
+        color: rgb(50, 101, 148);
+        font-size: 1.25em;
+        font-family: "Roboto-Medium";
+        font-weight: normal;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 0;
+      }
+    }
+    .category-description {
+      p {
+        font-family: "Roboto-Light";
+        font-size: 1.075em;
+        color: rgb(58, 58, 58);
+        line-height: 1.4;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .sub-category {
+    .item {
+      display: grid;
+      grid-template-columns: 3fr 105px 1fr;
+      align-items: center;
+      border-top: 1px solid rgb(217, 225, 231);
+      margin: 0 -20px 0 -20px;
+      padding: 20px;
+      height: 125px;
+      @include transition;
+      border-radius: 4px;
+      &:hover {
+        @include boxShadow;
+        .subcategory__name {
+          h3 {
+            &::before {
+              border-left-color: rgb(69, 109, 178);
+            }
+          }
+        }
+        .download__btn {
+          a {
+            background-color: rgb(69, 109, 178);
+            color: $color_white;
+            &::after {
+              content: url(../img/content/arhiv/load_btn-active.png);
+            }
+          }
+        }
+      }
+      &:last-child {
+        border-bottom: 1px solid rgb(217, 225, 231);
+        margin-bottom: 70px;
+      }
+      .subcategory__name {
+        h3 {
+          font-size: 1.075em;
+          font-weight: normal;
+          color: rgb(39, 38, 38);
+          padding-left: 32px;
+          position: relative;
+          max-width: 430px;
+          text-align: left;
+          &::before {
+            content: "";
+            position: absolute;
+            @include transition;
+            top: 5px;
+            left: 0;
+            border: 8px solid transparent;
+            border-left: 9px solid rgb(209, 215, 220);
+          }
+        }
+      }
+      .price {
+        span {
+          color: rgb(78, 120, 160);
+          font-size: 1.075em;
+          font-weight: bold;
+        }
+      }
+      .download__btn {
+        a {
+          display: block;
+          width: 225px;
+          height: 45px;
+          padding: 13px 16px;
+          border: 1px solid rgb(69, 109, 178);
+          border-radius: 5px;
+          background-color: $color_white;
+          color: rgb(69, 109, 178);
+          position: relative;
+          text-transform: uppercase;
+          font-size: 0.9em;
+          @include transition;
+          &::after {
+            content: url(../img/content/arhiv/load_btn.png);
+            position: absolute;
+            top: 11px;
+            right: 13px;
+          }
+        }
+      }
+    }
+  }
+  .content__form {
+    margin-bottom: 100px;
   }
 }
