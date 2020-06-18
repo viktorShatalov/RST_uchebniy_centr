@@ -394,10 +394,14 @@ h1 {
   font-weight: bold;
 }
 
-.uk-slidenav-next::after,
-.uk-slidenav-previous::after {
-  content: ">";
-  position: absolute;
+.uk-modal-caption {
+  color: black;
+  background-color: white;
+  padding: 10px;
+}
+
+.uk-responsive-width {
+  margin-top: -30px;
 }
 
 #header .top__row {
@@ -930,7 +934,7 @@ main .social ul li:nth-child(4)::after {
 }
 
 main .social ul li:nth-child(5)::after {
-  content: url(../img/left_sidebar/youtгbe.png);
+  content: url(../img/left_sidebar/youtube.png);
 }
 
 main .social ul li:hover:nth-child(1)::after {
@@ -950,7 +954,7 @@ main .social ul li:hover:nth-child(4)::after {
 }
 
 main .social ul li:hover:nth-child(5)::after {
-  content: url(../img/left_sidebar/youtгbe-active.png);
+  content: url(../img/left_sidebar/youtube-active.png);
 }
 
 main .popular h2 {
@@ -2199,7 +2203,7 @@ main .article .article__items .item .item__description p span {
 }
 
 #reviews .head h1 {
-  padding: 50px 0;
+  padding: 0 0 50px;
 }
 
 #reviews .head .description {
@@ -2222,8 +2226,7 @@ main .article .article__items .item .item__description p span {
 }
 
 #reviews .reviews__items .item {
-  width: 100%;
-  max-width: 257px;
+  max-width: 260px;
   padding: 15px;
   margin-bottom: 50px;
   border-radius: 4px;
@@ -2233,6 +2236,7 @@ main .article .article__items .item .item__description p span {
 
 #reviews .reviews__items .item .img {
   margin-bottom: 20px;
+  min-height: 309px;
 }
 
 #reviews .reviews__items .item .item__description {
@@ -2658,6 +2662,145 @@ main .article .article__items .item .item__description p span {
 
 .attention p span {
   border-bottom: 1px solid #326594;
+}
+
+#certificates {
+  padding: 0 20px;
+}
+
+#certificates .head h1,
+#certificates .head p {
+  margin-bottom: 30px;
+}
+
+#certificates .head p {
+  font-family: "Roboto-Light";
+  font-size: 1.075em;
+  color: dimgray;
+}
+
+#certificates .catalog__certificates-items .item {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  padding: 35px 15px 40px;
+  border-radius: 4px;
+  border-bottom: 1px solid #d9e1e7;
+}
+
+#certificates .catalog__certificates-items .item .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#certificates .catalog__certificates-items .item .link {
+  text-align: right;
+  margin-top: 15px;
+}
+
+#certificates .catalog__certificates-items .item .link a {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: #326594;
+}
+
+#certificates .catalog__certificates-items .item .link a:hover {
+  opacity: 0.8;
+}
+
+#certificates .catalog__certificates-items .item .item__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  position: relative;
+  border-radius: 3px;
+  max-width: 170px;
+  position: relative;
+}
+
+#certificates .catalog__certificates-items .item .item__img img {
+  width: 100%;
+  height: 100%;
+}
+
+#certificates .catalog__certificates-items .item .item__description {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 75%;
+          flex: 0 1 75%;
+}
+
+#certificates .catalog__certificates-items .item .item__description > p {
+  font-weight: bold;
+  color: #444444;
+  margin-bottom: 20px;
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+
+#certificates .catalog__certificates-items .item .item__description .description_text p {
+  font-family: "Roboto-Light";
+  font-size: 1.075em;
+  margin-top: 20px;
+  color: dimgray;
+}
+
+#certificates .catalog__certificates-items .item .item__description .description_text .date p {
+  color: #aaaaaa;
+  font-size: 0.95em;
+}
+
+#certificates .catalog__certificates-items .item:hover {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+#program__single {
+  padding: 0 20px;
+}
+
+#program__single .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 130px;
+  background-color: #f6f7f9;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+#program__single .head::before {
+  content: url(../img/content/single_programm/before-bg.png);
+  position: absolute;
+}
+
+#program__single .head .img {
+  position: absolute;
+  left: 15px;
+}
+
+#program__single .head h1 {
+  padding-left: 115px;
+  position: relative;
+  line-height: 1.4;
+  margin-top: 0;
+}
+
+#program__single .head h1 p {
+  font-size: 1.25rem;
+  color: #212121;
+  line-height: 1.2;
+  text-align: left;
 }
 
 #contacts {

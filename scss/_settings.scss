@@ -176,10 +176,12 @@ h1 {
   }
 }
 // lightbox
-.uk-slidenav-next,
-.uk-slidenav-previous {
-  &::after {
-    content: ">";
-    position: absolute;
-  }
+
+.uk-modal-caption {
+  color: $color_black;
+  background-color: white;
+  padding: 10px;
+}
+.uk-responsive-width {
+  margin-top: -30px;
 }
