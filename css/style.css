@@ -2471,6 +2471,195 @@ main .article .article__items .item .item__description p span {
   margin-bottom: 100px;
 }
 
+#article {
+  padding: 0 20px;
+}
+
+#article .head {
+  margin-bottom: 30px;
+}
+
+#article .article__content .article__img {
+  float: left;
+  margin: 0 35px 25px 0;
+}
+
+#article .article__content-description p {
+  font-family: "Roboto-Light";
+  font-size: 1.05em;
+  line-height: 1.35;
+  margin-bottom: 30px;
+}
+
+#article .article__content-description ul li {
+  padding: 0 0 25px 25px;
+  font-family: "Roboto-Light";
+  font-size: 1.05em;
+  line-height: 1.4;
+  color: dimgray;
+  position: relative;
+}
+
+#article .article__content-description ul li::before {
+  content: "";
+  position: absolute;
+  border: 8px solid transparent;
+  border-left: 9px solid #326594;
+  top: 3px;
+  left: 0;
+}
+
+#article .description-head p {
+  font-size: 1.5em;
+  color: #2b2b23;
+  font-family: "Roboto-Medium";
+}
+
+#article .article__footer > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#article .article__footer > p span {
+  font-family: "Roboto-Light";
+  font-size: 0.875em;
+  font-weight: lighter;
+}
+
+#article .article__footer > p span img {
+  margin: -3px 10px 0 0px;
+}
+
+#article .article__footer .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0 40px;
+  border-bottom: 1px solid #d9e1e7;
+}
+
+#article .article__footer .flex .article__signature p {
+  font-family: "Roboto-Light";
+  font-size: 1.075em;
+}
+
+#article .article__footer .flex .article__signature p span {
+  color: dimgray;
+  font-weight: bold;
+  font-family: "Roboto-Regular";
+}
+
+#article .article__footer .flex .article__footer-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#article .article__footer .flex .article__footer-social ul li {
+  margin-left: 15px;
+}
+
+#article .article__footer .flex .article__footer-social ul li:hover:nth-child(1) {
+  content: url(../img/left_sidebar/vk-active.png);
+}
+
+#article .article__footer .flex .article__footer-social ul li:hover:nth-child(2) {
+  content: url(../img/left_sidebar/facebook-active.png);
+}
+
+#article .article__footer .flex .article__footer-social ul li:hover:nth-child(3) {
+  content: url(../img/icon/ok-active.png);
+}
+
+#article .article__footer .flex .article__footer-social ul li:hover:nth-child(4) {
+  content: url(../img/icon/twich-active.png);
+}
+
+#article .article__footer .flex .article__footer-social ul li:hover:nth-child(5) {
+  content: url(../img/icon/my_mail_ru-active.png);
+}
+
+#article .article {
+  margin-top: 50px;
+}
+
+#article .articles-see__also p {
+  font-family: "Roboto-Regular";
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+#article .articles-see__also ul {
+  padding: 20px;
+}
+
+#article .articles-see__also ul li {
+  list-style: disc;
+  color: #326594;
+  margin-bottom: 23px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#article .articles-see__also ul li a {
+  color: #326594;
+  font-family: "Roboto-Light";
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#article .articles-see__also ul li:hover a {
+  font-weight: bold;
+  border-bottom: 1px solid #326594;
+}
+
+.attention {
+  padding: 30px 20px 25px;
+  border-radius: 4px;
+  border: 1px solid #326594;
+  position: relative;
+  margin: 40px 0 60px;
+}
+
+.attention::before {
+  content: "!";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  left: 17px;
+  border-radius: 50%;
+  border: 1px solid #326594;
+  color: #326594;
+  font-family: "Roboto-Light";
+  font-size: 2em;
+  text-align: center;
+  z-index: 2;
+  background-color: white;
+}
+
+.attention p {
+  color: #326594;
+  margin-bottom: 0 !important;
+}
+
+.attention p span {
+  border-bottom: 1px solid #326594;
+}
+
 #contacts {
   font-size: 1.075em;
   text-align: justify;
