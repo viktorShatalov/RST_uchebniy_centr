@@ -97,6 +97,41 @@
                 <div class="left__sidebar-link cabinet">
                     <a href="#">Вход<br> в личный кабинет</a>
                 </div>
+                <div class="popular">
+                    <h2>Популярные<br> програмы обучения</h2>
+                    <ul>
+                        <li><a href="#">Охрана труда</a></li>
+                        <li><a href="#">Пожарно-технический<br> минимум</a></li>
+                        <li><a href="#">Работа на высоте</a></li>
+                        <li><a href="#">ГО и ЧС</a></li>
+                        <li><a href="#">Первая помощь</a></li>
+                    </ul>
+                </div>
+                <div class="popular additional__programs">
+                    <h2>Дополнительные<br> програмы</h2>
+                    <ul>
+                        <li><a href="#">Специалист по ОТ (256ч.)</a></li>
+                        <li><a href="#">Техносферная безопасность (502ч.)</a></li>
+                        <li><a href="#">Добровольные пожарные дружины (ДПД)</a></li>
+                        <li><a href="#">Экологическая безопасность</a></li>
+                        <li><a href="#">Промышленная безопасность</a></li>
+                        <li><a href="#">Электробезопасность</a></li>
+                        <li><a href="#">Радиоционная безопасность</a></li>
+                        <li><a href="#">Безопасность дорожнего движения (БДД)</a></li>
+                        <li><a href="#">Транспортная безопасность</a></li>
+                        <li><a href="#">Рабочие профессии</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h2>РегионСтандарт<br> в соцсетях</h2>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
                 <div class="our__activity">
                     <h2>Наша деятельность</h2>
                     <ul>
@@ -110,26 +145,6 @@
                         <li><a href="#">Доставка и Оплата</a></li>
                         <li><a href="#">Интернет магазин</a></li>
                         <li><a href="#">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="popular">
-                    <h2>Популярные<br> програмы обучения</h2>
-                    <ul>
-                        <li><a href="#">Охрана труда</a></li>
-                        <li><a href="#">Пожарно-технический<br> минимум</a></li>
-                        <li><a href="#">Работа на высоте</a></li>
-                        <li><a href="#">ГО и ЧС</a></li>
-                        <li><a href="#">Первая помощь</a></li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <h2>РегионСтандарт<br> в соцсетях</h2>
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
                     </ul>
                 </div>
                 <div class="apply__education">
@@ -151,7 +166,215 @@
                         </h1>
                     </div>
                     <div class="content">
-                        content
+                        <div class="switcher">
+                            <ul class="switch_btn" data-uk-switcher="{connect:'#switcher'}">
+                                <li><a>Дистанционно</a></li>
+                                <li><a>Очно</a></li>
+                            </ul>
+                            <ul id="switcher" class="uk-switcher">
+                                <li>
+                                    <div class="flex">
+                                        <p class="price">Стоимость обучения: <span>890 руб/чел</span></p>
+                                        <p class="price__description">(от 10 чел - 790 руб/чел; от 20 чел - 690 руб/чел)
+                                        </p>
+                                    </div>
+                                    <div class="get_request">
+                                        <button class="uk-button" data-uk-modal="{target:'#get_request'}">Оставить
+                                            заявку</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex">
+                                        <p class="price">Стоимость обучения: <span>1000 руб/чел</span></p>
+                                        <p class="price__description">(от 10 чел - 790 руб/чел; от 20 чел - 690 руб/чел)
+                                        </p>
+                                    </div>
+                                    <div class="get_request">
+                                        <button class="uk-button" data-uk-modal="{target:'#get_request'}">Оставить
+                                            заявку</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="attention">
+                            <p>
+                                УЦ «РегионСтандарт» проводит обучение ПТМ на основании <span>образовательной
+                                    лицензии</span>
+                                (Проверить лицензию вы можете на сайте <span>РОСОБРНАДЗОРА</span>). Бессрочная
+                                аккредитация в
+                                системе НСОПБ. Программы ПТМ <span>согласованы с МЧС России.</span>
+                            </p>
+                        </div>
+                        <div class="advantages">
+                            <p>Преимущества обучения в нашем учебном центре</p>
+                            <div class="advantages__items">
+                                <div class="item">
+                                    <img src="img/content/single_programm/delivery.png"
+                                        alt="icon Срок получения удостоверения">
+                                    <p>Срок получения удостоверения от 1 дня</p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/content/single_programm/Paperplane.png"
+                                        alt="icon Срок получения удостоверения">
+                                    <p>Отправка оригиналов заказным письмом Почтой России</p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/content/single_programm/Mail.png"
+                                        alt="icon Срок получения удостоверения">
+                                    <p>Копии на e-mail в день прохождения теста</p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/content/single_programm/Paste.png"
+                                        alt="icon Срок получения удостоверения">
+                                    <p>Актуальные программы обучения</p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/content/single_programm/Time.png"
+                                        alt="icon Срок получения удостоверения">
+                                    <p>Обучение доступно 24 часа в сутки 7 дней в неделю</p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/content/single_programm/Headset.png"
+                                        alt="icon Срок получения удостоверения">
+                                    <p>Консультации преподавателей в режиме ON-LINE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="how__do">
+                            <p>Как пройти обучение по ПТМ</p>
+                            <img src="img/content/single_programm/3.jpg" alt="Как пройти обучение по ПТМ">
+                        </div>
+                        <div class="get_request-awesome">
+                            <p>Для получения подробной информации, оставьте заявку:</p>
+                            <button class="uk-button" data-uk-modal="{target:'#get_request'}">Оставить заявку</button>
+                        </div>
+                        <div class="regulated">
+                            <div class="regulated__items">
+                                <div class="item">
+                                    <img src="img/content/single_programm/review.png" alt="icon Чем регулируется обучение
+                                    пожарно-техническомому минимуму">
+                                    <p>Чем регулируется обучение пожарно-техническомому минимуму</p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/content/single_programm/review2.png" alt="icon Отзывы наших учащихся о нашем
+                                    учебном центре">
+                                    <p>Отзывы наших учащихся о нашем учебном центре</p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/content/single_programm/review3.png" alt="icon Ответственность за отсутствие
+                                    обучения">
+                                    <p>Ответственность за отсутствие обучения</p>
+                                </div>
+                                <div class="item">
+                                    <img src="img/content/single_programm/review4.png" alt="icon Периодичность обучения
+                                    пожарно-техническому минимуму">
+                                    <p>Периодичность обучения пожарно-техническому минимуму</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="documents">
+                            <p>Удостоверение о прохождении курсов по ПТМ</p>
+                            <div class="documents__item">
+                                <div class="img">
+                                    <a href="img/content/single_programm/1.jpg" data-uk-lightbox
+                                        title="Удостоверение о прохождении курсов">
+                                        <img src="img/content/single_programm/1.jpg">
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        По завершении обучения вы получите Удостоверение по Пожарно-техническому
+                                        минимуму установленного образца + протокол проверки знаний <a href="">(см.
+                                            образец
+                                            протокола >>)</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="documents__item">
+                                <div class="img">
+                                    <a href="img/content/single_programm/2.jpg" data-uk-lightbox
+                                        title="сертификат о прохождении курсов">
+                                        <img src="img/content/single_programm/2.jpg">
+                                    </a>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Срок действия удостоверения по ПТМ составляет 3 года. Удостоверение
+                                        действительно на
+                                        всей територии РФ.
+                                    </p>
+                                    <div class="get_request">
+                                        <a href="#">Узнать подробнее об удостоверении</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery">
+                            <div class="heading">
+                                <p>Доставка документов</p>
+                            </div>
+                            <p>Копии удостоверения и протокола Вы получите на свою электронную почту в течение 5 минут
+                                после сдачи экзаменационного теста (при условии подтверждения оплаты)
+                            </p>
+                            <div class="form">
+                                <form>
+                                    <label for="region">Выбрать регион:</label>
+                                    <select name="region" id="region">
+                                        <option value="Белгородская область">Белгородская область</option>
+                                        <option value="Белгородская область">Белгородская область</option>
+                                        <option value="Белгородская область">Белгородская область</option>
+                                        <option value="Белгородская область">Белгородская область</option>
+                                    </select>
+                                </form>
+                                <div class="form__resoult">
+                                    <div class="form__resoult-heading">
+                                        <p>Доставка оригиналов документов, включая удостоверение
+                                            и протокол, осуществляется:</p>
+                                        <p>Сроки и стоимость доставки</p>
+                                    </div>
+                                    <div class="form__resoult-items">
+                                        <div class="item">
+                                            <div class="item-left">
+                                                <img src="img/content/single_programm/Russian_Post.png"
+                                                    alt="icon Russian_Post">
+                                                <p>
+                                                    ФГУП «Почта России» (заказное письмо с уведомлением). Трек-номер для
+                                                    отслеживания письма отправляется на электронную почту.
+                                                </p>
+                                            </div>
+                                            <div class="item-rigth">
+                                                <p>0 руб. / 8-11 дн.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-left">
+                                                <img src="img/content/single_programm/Post.png" alt="icon Post">
+                                                <p>
+                                                    Компанией «Курьер Сервис Экспресс» (экспресс-доставка курьером лично
+                                                    в руки)*
+                                                </p>
+                                            </div>
+                                            <div class="item-rigth">
+                                                <p>
+                                                    <span>г. Белгород / 550 руб. / 2-3 дн.</span>
+                                                    <span>Старый Оскол / 700 руб. / 3-4 дн.</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="form__resoult-attention">Доставка курьером возможна не во все населенные
+                                    пункты региона.</p>
+                                <div class="payment">
+                                    <p>Способы оплаты</p>
+                                    <div class="description">
+                                        <p>Вы можете оплатить наши образовательные услуги следующими способами:</p>
+                                    </div>
+                                    <span><a href="#">Банковской картой</a> (только для физлиц)</span>
+                                    <span><a href="#">Банковским переводом</a></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -288,6 +511,7 @@
 
     <script src="js/jquery/jquery.min.js"></script>
     <script src="js/uikit.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
