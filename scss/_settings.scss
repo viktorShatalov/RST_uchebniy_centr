@@ -120,6 +120,36 @@ h1 {
   ul {
     @include flex;
     justify-content: center;
+    a {
+      display: inline-block;
+      width: 30px;
+      @include transition;
+      &.active {
+        font-weight: bold;
+      }
+      &.prev {
+        @include transition;
+        img {
+          transform: translate(10px, 5px);
+        }
+        &:hover {
+          img {
+            transform: translate(10px, 5px) scale(1.3);
+          }
+        }
+      }
+      &.next {
+        @include transition;
+        img {
+          transform: rotate(180deg) translate(-10px, -5px);
+        }
+        &:hover {
+          img {
+            transform: rotate(180deg) translate(-10px, -5px) scale(1.3);
+          }
+        }
+      }
+    }
     li {
       cursor: pointer;
       position: relative;
@@ -138,43 +168,6 @@ h1 {
         background-color: $color_white;
         border: 1px solid transparent;
       }
-      &:first-child,
-      &:last-child {
-        width: 0;
-        height: 0;
-        border: none;
-        &::after {
-          content: url(../img/icon/pagination__next.png);
-          position: absolute;
-          top: 50%;
-          left: -20px;
-        }
-      }
-      &:last-child {
-        &::after {
-          content: url(../img/icon/pagination__next.png);
-          transform: rotate(180deg);
-          right: -30px;
-          left: 0;
-        }
-      }
-      &:nth-child(6) {
-        background-color: transparent;
-        border: 1px solid transparent;
-        font-family: "Roboto-Medium";
-        &:hover {
-          box-shadow: none;
-          background-color: transparent;
-          border: 1px solid transparent;
-        }
-      }
-      a {
-        display: inline-block;
-        @include transition;
-        &[aria-current="page"] {
-          font-weight: bold;
-        }
-      }
     }
   }
 }
@@ -184,6 +177,8 @@ h1 {
   color: $color_black;
   background-color: white;
   padding: 10px;
+  white-space: pre-wrap;
+  bottom: -47px;
 }
 .uk-responsive-width {
   margin-top: -30px;
@@ -192,6 +187,6 @@ h1 {
 .mobile__show {
   display: none;
 }
-#breadcumbs.hide{
+#breadcumbs.hide {
   display: none;
 }

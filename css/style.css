@@ -480,6 +480,47 @@ h1 {
           justify-content: center;
 }
 
+#pagination ul a {
+  display: inline-block;
+  width: 30px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#pagination ul a.active {
+  font-weight: bold;
+}
+
+#pagination ul a.prev {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#pagination ul a.prev img {
+  -webkit-transform: translate(10px, 5px);
+          transform: translate(10px, 5px);
+}
+
+#pagination ul a.prev:hover img {
+  -webkit-transform: translate(10px, 5px) scale(1.3);
+          transform: translate(10px, 5px) scale(1.3);
+}
+
+#pagination ul a.next {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#pagination ul a.next img {
+  -webkit-transform: rotate(180deg) translate(-10px, -5px);
+          transform: rotate(180deg) translate(-10px, -5px);
+}
+
+#pagination ul a.next:hover img {
+  -webkit-transform: rotate(180deg) translate(-10px, -5px) scale(1.3);
+          transform: rotate(180deg) translate(-10px, -5px) scale(1.3);
+}
+
 #pagination ul li {
   cursor: pointer;
   position: relative;
@@ -503,54 +544,12 @@ h1 {
   border: 1px solid transparent;
 }
 
-#pagination ul li:first-child, #pagination ul li:last-child {
-  width: 0;
-  height: 0;
-  border: none;
-}
-
-#pagination ul li:first-child::after, #pagination ul li:last-child::after {
-  content: url(../img/icon/pagination__next.png);
-  position: absolute;
-  top: 50%;
-  left: -20px;
-}
-
-#pagination ul li:last-child::after {
-  content: url(../img/icon/pagination__next.png);
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  right: -30px;
-  left: 0;
-}
-
-#pagination ul li:nth-child(6) {
-  background-color: transparent;
-  border: 1px solid transparent;
-  font-family: "Roboto-Medium";
-}
-
-#pagination ul li:nth-child(6):hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-}
-
-#pagination ul li a {
-  display: inline-block;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-#pagination ul li a[aria-current="page"] {
-  font-weight: bold;
-}
-
 .uk-modal-caption {
   color: black;
   background-color: white;
   padding: 10px;
+  white-space: pre-wrap;
+  bottom: -47px;
 }
 
 .uk-responsive-width {
@@ -1930,7 +1929,8 @@ main .article .article__items .item .item__description p span {
   height: 42px;
   border-radius: 5px;
   font-family: "Georgia";
-  padding: 10px 16px;
+  padding: 10px 0 10px 16px;
+  text-align: left;
 }
 
 #outsorsing .head h1 {
