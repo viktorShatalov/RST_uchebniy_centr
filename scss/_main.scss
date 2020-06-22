@@ -215,57 +215,76 @@ main {
       justify-content: space-evenly;
       align-items: center;
       height: 80px;
-      li {
-        cursor: pointer;
+      a {
         &:nth-child(1) {
-          &::after {
-            content: url(../img/left_sidebar/vk.png);
+          li {
+            &::after {
+              content: url(../img/left_sidebar/vk.png);
+            }
           }
         }
         &:nth-child(2) {
-          &::after {
-            content: url(../img/left_sidebar/facebook.png);
+          li {
+            &::after {
+              content: url(../img/left_sidebar/facebook.png);
+            }
           }
         }
         &:nth-child(3) {
-          &::after {
-            content: url(../img/left_sidebar/insta.png);
+          li {
+            &::after {
+              content: url(../img/left_sidebar/insta.png);
+            }
           }
         }
         &:nth-child(4) {
-          &::after {
-            content: url(../img/left_sidebar/ya.png);
+          li {
+            &::after {
+              content: url(../img/left_sidebar/ya.png);
+            }
           }
         }
         &:nth-child(5) {
-          &::after {
-            content: url(../img/left_sidebar/youtube.png);
+          li {
+            &::after {
+              content: url(../img/left_sidebar/youtube.png);
+            }
           }
         }
         &:hover {
           &:nth-child(1) {
-            &::after {
-              content: url(../img/left_sidebar/vk-active.png);
+            li {
+              &::after {
+                content: url(../img/left_sidebar/vk-active.png);
+              }
             }
           }
           &:nth-child(2) {
-            &::after {
-              content: url(../img/left_sidebar/facebook-active.png);
+            li {
+              &::after {
+                content: url(../img/left_sidebar/facebook-active.png);
+              }
             }
           }
           &:nth-child(3) {
-            &::after {
-              content: url(../img/left_sidebar/insta-active.png);
+            li {
+              &::after {
+                content: url(../img/left_sidebar/insta-active.png);
+              }
             }
           }
           &:nth-child(4) {
-            &::after {
-              content: url(../img/left_sidebar/ya-active.png);
+            li {
+              &::after {
+                content: url(../img/left_sidebar/ya-active.png);
+              }
             }
           }
           &:nth-child(5) {
-            &::after {
-              content: url(../img/left_sidebar/youtube-active.png);
+            li {
+              &::after {
+                content: url(../img/left_sidebar/youtube-active.png);
+              }
             }
           }
         }
@@ -300,11 +319,12 @@ main {
       background-image: url(../img/left_sidebar/get_request.png);
       background-repeat: no-repeat;
       border-radius: 5px;
-      width: 278px;
+      width: 100%;
+      max-width: 278px;
       height: 118px;
       position: relative;
       font-weight: bold;
-      font-size: 1.375em;
+      font-size: 1.275em;
       @include transition;
       span {
         margin-left: -13px;
@@ -319,8 +339,8 @@ main {
       &::after {
         content: "";
         position: absolute;
-        width: 258px;
-        height: 98px;
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
         display: block;
         border-radius: 5px;
         border: 1px solid $color_white;
@@ -393,13 +413,13 @@ main {
             font-weight: normal;
           }
           p {
-            font-family: "Roboto-Light";
+            font-weight: 300;
             color: $color_black;
             opacity: 0.85;
             margin-bottom: 10px;
           }
           a {
-            font-family: "Roboto-Light";
+            font-weight: 300;
             font-size: 0.95em;
             color: $color_content_color-link;
             opacity: 0.85;
@@ -437,7 +457,7 @@ main {
       font-size: 1.05em;
       text-align: justify;
       line-height: 1.412;
-      font-family: "Roboto-Light";
+      font-weight: 300;
       margin-bottom: 25px;
     }
     a {
@@ -484,7 +504,7 @@ main {
       a {
         padding: 14px 19px;
         font-size: 0.95em;
-        font-family: "Roboto-Light";
+        font-weight: 300;
         border-radius: 3px;
         color: $color_article_link;
         @include transition;
@@ -511,7 +531,7 @@ main {
             right: 0;
             background-color: $color_article_statistics;
             width: 100px;
-            font-family: "Roboto-Light";
+            font-weight: 300;
             font-size: 0.95em;
             color: $color_white;
             padding: 4px 0;
@@ -552,7 +572,7 @@ main {
             display: flex;
             justify-content: space-between;
             span {
-              font-family: "Roboto-Light";
+              font-weight: 300;
               font-size: 0.875em;
               font-weight: lighter;
               color: $color_content_color-link;

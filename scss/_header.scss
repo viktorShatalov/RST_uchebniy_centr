@@ -71,6 +71,27 @@
       @include boxShadow;
       border-radius: 5px;
       @include transition;
+      &-close {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          top: 4px;
+          width: 10px;
+          height: 2px;
+          background-color: rgb(69, 109, 178);
+          transform: rotate(-45deg);
+        }
+        &::before {
+          transform: rotate(45deg);
+        }
+      }
       &::before {
         content: "";
         position: absolute;
@@ -157,7 +178,10 @@
       text-transform: uppercase;
       border: 1px solid $color_top_row-color;
       border-radius: 5px;
-      padding: 6px 11px;
+      padding: 6px 10px;
+      font-family: Tahoma, sans-serif;
+      font-size: 14px;
+      height: 45px;
       @include transition;
       cursor: pointer;
       &:hover {

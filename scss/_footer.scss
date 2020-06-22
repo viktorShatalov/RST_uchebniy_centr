@@ -1,6 +1,8 @@
 footer {
+  text-align: left;
   .footer__top-row {
     border-top: 1px solid $color_search-color;
+    margin-top: 50px;
     .conteiner {
       @include flex;
       justify-content: space-between;
@@ -37,10 +39,10 @@ footer {
     background-color: $color_footer-bg;
     padding: 45px 0 35px;
     color: $color_footer-color;
-    font-family: "Roboto-Light";
+    font-weight: 300;
     a {
       color: $color_footer-color;
-      font-family: "Roboto-Light";
+      font-weight: 300;
     }
     .footer__items {
       @include flex;
@@ -105,33 +107,38 @@ footer {
             }
             .social {
               display: flex;
-              li {
-                cursor: pointer;
+              a {
+                display: block;
                 margin-right: 15px;
                 margin-top: 15px;
                 &:nth-child(1) {
-                  content: url(../img/footer_icon/phone1.png);
-                  &:hover {
-                    content: url(../img/footer_icon/phone1-active.png);
+                  li {
+                    content: url(../img/footer_icon/phone1.png);
+                    &:hover {
+                      content: url(../img/footer_icon/phone1-active.png);
+                    }
                   }
                 }
                 &:nth-child(2) {
-                  content: url(../img/footer_icon/wats-up.png);
-                  &:hover {
-                    content: url(../img/footer_icon/wats-up-active.png);
+                  li {
+                    content: url(../img/footer_icon/wats-up.png);
+                    &:hover {
+                      content: url(../img/footer_icon/wats-up-active.png);
+                    }
                   }
                 }
                 &:nth-child(3) {
-                  content: url(../img/footer_icon/telega.png);
-                  &:hover {
-                    content: url(../img/footer_icon/telega-active.png);
+                  li {
+                    content: url(../img/footer_icon/telega.png);
+                    &:hover {
+                      content: url(../img/footer_icon/telega-active.png);
+                    }
                   }
                 }
               }
             }
           }
           .mail {
-            margin: 0 !important;
             a {
               color: $color_footer-adress-span;
               font-family: "Georgia";
@@ -141,38 +148,48 @@ footer {
             }
             .social {
               display: flex;
-              li {
-                cursor: pointer;
+              a {
+                display: block;
                 margin-right: 15px;
                 margin-top: 15px;
                 &:nth-child(1) {
-                  content: url(../img/footer_icon/vk.png);
-                  &:hover {
-                    content: url(../img/footer_icon/vk-active.png);
+                  li {
+                    content: url(../img/footer_icon/vk.png);
+                    &:hover {
+                      content: url(../img/footer_icon/vk-active.png);
+                    }
                   }
                 }
                 &:nth-child(2) {
-                  content: url(../img/footer_icon/facebook.png);
-                  &:hover {
-                    content: url(../img/footer_icon/facebook-active.png);
+                  li {
+                    content: url(../img/footer_icon/facebook.png);
+                    &:hover {
+                      content: url(../img/footer_icon/facebook-active.png);
+                    }
                   }
                 }
                 &:nth-child(3) {
-                  content: url(../img/footer_icon/insta.png);
-                  &:hover {
-                    content: url(../img/footer_icon/insta-active.png);
+                  li {
+                    content: url(../img/footer_icon/insta.png);
+                    &:hover {
+                      content: url(../img/footer_icon/insta-active.png);
+                    }
                   }
                 }
                 &:nth-child(4) {
-                  content: url(../img/footer_icon/ya.png);
-                  &:hover {
-                    content: url(../img/footer_icon/ya-active.png);
+                  li {
+                    content: url(../img/footer_icon/ya.png);
+                    &:hover {
+                      content: url(../img/footer_icon/ya-active.png);
+                    }
                   }
                 }
                 &:nth-child(5) {
-                  content: url(../img/footer_icon/youtube.png);
-                  &:hover {
-                    content: url(../img/footer_icon/youtube-active.png);
+                  li {
+                    content: url(../img/footer_icon/youtube.png);
+                    &:hover {
+                      content: url(../img/footer_icon/youtube-active.png);
+                    }
                   }
                 }
               }
@@ -184,6 +201,6 @@ footer {
   }
   .signature {
     font-size: 0.95em;
-    font-family: "Roboto-Light";
+    font-weight: 300;
   }
 }

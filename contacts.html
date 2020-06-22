@@ -16,7 +16,23 @@
     <header id="header">
         <div class="top__row">
             <div class="conteiner">
-                <ul class="top__row-items">
+                <ul class="mobile__show">
+                    <li>
+                        <a href="#top__row-phone" data-uk-modal><img src="img/mobile/Phone.png" alt="icon phone"></a>
+                    </li>
+                    <li>
+                        <a href="#top__row-mail" data-uk-modal><img src="img/mobile/mail.png" alt="icon mail"></a>
+                    </li>
+                    <li>
+                        <a href="#top__row-watsUp" data-uk-modal><img src="img/mobile/whatsapp.png"
+                                alt="icon whats-up"></a>
+                    </li>
+                    <li>
+                        <a href="#top__row-telega" data-uk-modal><img src="img/mobile/telega.png"
+                                alt="icon Telegram"></a>
+                    </li>
+                </ul>
+                <ul class="top__row-items mobile__hide">
                     <li>
                         <ul class="dropdown__phone">
                             <li class="dropdown__show">
@@ -26,12 +42,13 @@
                             <li class="dropdown__hide">
                                 <span class="pseudo">СПБ</span>
                                 <span><a href="tel:+7(812)770-76-79">+7 (812) 770-76-79</a></span>
+                                <span class="dropdown__hide-close"></span>
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="mobile__hide">
                         <span>Общие</span>
-                        <span><a href="tel:+7(999)970-77-77 ">+7 (999) 970-77-77 </a></span>
+                        <span><a href="tel:+7(999)970-77-77 ">+7 (999) 970-77-77</a></span>
                     </li>
                     <li>
                         <a href="mailto:r.s.msk@mail.ru">r.s.msk@mail.ru</a>
@@ -65,8 +82,16 @@
                     </form>
                 </div>
                 <div class="get_request">
-                    <button class="uk-button" data-uk-modal="{target:'#get_request'}">Подать заявку на обучение</button>
+                    <button data-uk-modal="{target:'#get_request'}">Подать заявку на обучение</button>
                 </div>
+            </div>
+        </div>
+        <div class="mobile__menu mobile__show">
+            <a href="/" class="back__to"></a>
+            <a href="/" class="home"></a>
+            <div id="search"></div>
+            <div class="burger">
+                <span></span>
             </div>
         </div>
         <nav class="conteiner">

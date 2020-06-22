@@ -78,7 +78,7 @@ $color_modal-p: rgb(138, 138, 138);
         }
       }
       .text {
-        font-size: 0.75rem;
+        font-size: small;
         line-height: 1.2;
         text-align: center;
       }
@@ -112,5 +112,72 @@ $color_modal-p: rgb(138, 138, 138);
   }
   &::before {
     transform: rotate(-45deg);
+  }
+}
+#top__row-phone,
+#top__row-watsUp,
+#top__row-telega,
+#top__row-mail {
+  .uk-modal-dialog {
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+  .close__btn {
+    right: 5%;
+    top: 10px;
+    &::after,
+    &::before {
+      background-color: rgb(255, 255, 255);
+    }
+  }
+  .top__row-phone,
+  .top__row-mail,
+  .top__row-watsUp,
+  .top__row-telega {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    li {
+      height: 50px;
+      padding: 13px 15px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(69, 108, 176);
+      &:nth-child(2) {
+        background-color: rgb(238, 241, 247);
+        border-top: 1px solid rgb(222, 226, 235);
+        border-bottom: 1px solid rgb(222, 226, 235);
+      }
+      span {
+        display: inline-block;
+        &:first-child {
+          width: 100px;
+          font-family: "Georgia";
+        }
+      }
+    }
+  }
+}
+#top__row-mail {
+  .top__row-mail {
+    li {
+      a {
+        color: rgb(69, 108, 176);
+      }
+    }
+  }
+}
+#top__row-mail,
+#top__row-watsUp,
+#top__row-telega {
+  .top__row-mail,
+  .top__row-telega,
+  .top__row-watsUp {
+    li {
+      text-align: center;
+    }
   }
 }

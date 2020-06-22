@@ -12,12 +12,15 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
   text-align: justify;
 }
+:root {
+  font-size: calc(0.5em + 1vw);
+}
 .conteiner {
-  width: $width;
+  max-width: $width;
   margin: 0 auto;
 }
 a {
@@ -125,7 +128,7 @@ h1 {
       background-color: rgb(246, 247, 249);
       border: 1px solid rgb(239, 242, 245);
       border-radius: 4px;
-      font-family: "Roboto-Light";
+      font-weight: 300;
       @include transition;
       margin: 0 5px;
       padding: 5px 0px;
@@ -184,4 +187,11 @@ h1 {
 }
 .uk-responsive-width {
   margin-top: -30px;
+}
+
+.mobile__show {
+  display: none;
+}
+#breadcumbs.hide{
+  display: none;
 }

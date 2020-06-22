@@ -11,7 +11,7 @@
   ul.first__content {
     li {
       padding: 0 0 35px 25px;
-      font-family: "Roboto-Light";
+      font-weight: 300;
       font-size: 1.05em;
       line-height: 1.4;
       color: rgb(105, 105, 105);
@@ -40,7 +40,7 @@
   ul.second__content {
     li {
       padding: 0 0 35px 25px;
-      font-family: "Roboto-Light";
+      font-weight: 300;
       font-size: 1.05em;
       line-height: 1.4;
       color: rgb(105, 105, 105);
@@ -279,7 +279,7 @@
       padding: 35px 0 50px;
     }
     p {
-      font-family: "Roboto-Light";
+      font-weight: 300;
 
       line-height: 1.4;
       margin-bottom: 45px;
@@ -323,7 +323,7 @@
     ul {
       li {
         padding: 0 0 35px 25px;
-        font-family: "Roboto-Light";
+        font-weight: 300;
         font-size: 1.07em;
         line-height: 1.4;
         color: rgb(105, 105, 105);
@@ -467,7 +467,7 @@
     ul {
       li {
         padding: 0 0 30px 25px;
-        font-family: "Roboto-Light";
+        font-weight: 300;
         font-size: 1.075em;
         line-height: 1.4;
         color: rgb(105, 105, 105);
@@ -552,7 +552,7 @@
   }
   .last__description {
     p {
-      font-family: "Roboto-Light";
+      font-weight: 300;
 
       line-height: 1.4;
       margin-bottom: 45px;
@@ -562,7 +562,7 @@
   }
 }
 
-// article
+// articles
 #catalog__articles {
   h1 {
     margin-bottom: 30px;
@@ -609,7 +609,7 @@
           right: 0;
           background-color: $color_article_statistics;
           width: 100px;
-          font-family: "Roboto-Light";
+          font-weight: 300;
           font-size: 0.95em;
           color: $color_white;
           padding: 4px 0;
@@ -653,7 +653,7 @@
           display: flex;
           justify-content: space-between;
           span {
-            font-family: "Roboto-Light";
+            font-weight: 300;
             font-size: 0.875em;
             font-weight: lighter;
             color: $color_content_color-link;
@@ -661,11 +661,12 @@
         }
         .description_text {
           p {
-            font-family: "Roboto-Light";
+            font-weight: 300;
             font-size: 1.075em;
             margin-top: 20px;
             width: 100%;
             max-width: 100%;
+            color: rgb(105, 105, 105);
           }
         }
       }
@@ -682,7 +683,7 @@
       padding: 0 0 50px;
     }
     .description {
-      font-family: "Roboto-Light";
+      font-weight: 300;
 
       font-size: 1.075em;
     }
@@ -710,7 +711,7 @@
         p {
           margin-bottom: 10px;
           &:nth-child(2) {
-            font-family: "Roboto-Light";
+            font-weight: 300;
             font-size: 0.95rem;
             font-weight: normal;
             display: flex;
@@ -786,7 +787,7 @@
     }
     .category-description {
       p {
-        font-family: "Roboto-Light";
+        font-weight: 300;
         font-size: 1.075em;
         color: rgb(58, 58, 58);
         line-height: 1.4;
@@ -898,7 +899,7 @@
   }
   .article__content-description {
     p {
-      font-family: "Roboto-Light";
+      font-weight: 300;
       font-size: 1.05em;
       line-height: 1.35;
       margin-bottom: 30px;
@@ -906,7 +907,7 @@
     ul {
       li {
         padding: 0 0 25px 25px;
-        font-family: "Roboto-Light";
+        font-weight: 300;
         font-size: 1.05em;
         line-height: 1.4;
         color: rgb(105, 105, 105);
@@ -935,7 +936,7 @@
       justify-content: space-between;
       align-items: center;
       span {
-        font-family: "Roboto-Light";
+        font-weight: 300;
         font-size: 0.875em;
         font-weight: lighter;
         img {
@@ -951,7 +952,7 @@
       border-bottom: 1px solid rgb(217, 225, 231);
       .article__signature {
         p {
-          font-family: "Roboto-Light";
+          font-weight: 600;
           font-size: 1.075em;
           span {
             color: rgb(105, 105, 105);
@@ -999,18 +1000,26 @@
     ul {
       padding: 20px;
       li {
-        list-style: disc;
+        position: relative;
         color: rgb(50, 101, 148);
-        margin-bottom: 23px;
+        margin-bottom: 17px;
         @include transition;
         a {
           color: rgb(50, 101, 148);
-          font-family: "Roboto-Light";
+          font-weight: 300;
           @include transition;
         }
+        &::before {
+          content: url(../img/left_sidebar/Layer-hover.png);
+          position: absolute;
+          margin-left: -10px;
+          transform: scale(0.3);
+        }
         &:hover {
+          &::before {
+            transform: scale(0.7);
+          }
           a {
-            font-weight: bold;
             border-bottom: 1px solid rgb(50, 101, 148);
           }
         }
@@ -1034,7 +1043,7 @@
     border-radius: 50%;
     border: 1px solid rgb(50, 101, 148);
     color: rgb(50, 101, 148);
-    font-family: "Roboto-Light";
+    font-weight: 300;
     font-size: 2em;
     text-align: center;
     z-index: 2;
@@ -1057,7 +1066,7 @@
       margin-bottom: 30px;
     }
     p {
-      font-family: "Roboto-Light";
+      font-weight: 300;
       font-size: 1.075em;
       color: rgb(105, 105, 105);
     }
@@ -1106,7 +1115,7 @@
         }
         .description_text {
           p {
-            font-family: "Roboto-Light";
+            font-weight: 300;
             font-size: 1.075em;
             margin-top: 20px;
             color: rgb(105, 105, 105);
@@ -1149,7 +1158,7 @@
       line-height: 1.4;
       margin-top: 0;
       p {
-        font-size: 1.25rem;
+        font-size: 0.925rem;
         color: rgb(33, 33, 33);
         line-height: 1.2;
         text-align: left;
@@ -1209,13 +1218,15 @@
             }
             .price__description {
               color: #212121;
-              font-family: "Roboto-Light";
+              font-weight: 300;
               font-size: 1.075em;
             }
           }
         }
         .get_request {
           button {
+            width: 225px;
+            height: 45px;
             background-color: $color_white;
             color: $color_top_row-color;
             text-transform: uppercase;
@@ -1263,7 +1274,7 @@
         p {
           text-align: left;
           font-size: 0.925em;
-          font-family: "Roboto-Light";
+          font-weight: 300;
           line-height: 1.4;
         }
       }
@@ -1301,6 +1312,8 @@
       }
     }
     button {
+      width: 225px;
+      height: 45px;
       background-color: $color_white;
       color: $color_top_row-color;
       text-transform: uppercase;
@@ -1366,7 +1379,7 @@
           .get_request {
             a {
               display: block;
-              height: 45px;
+              text-align: center;
               background-color: $color_white;
               color: $color_top_row-color;
               text-transform: uppercase;
@@ -1394,7 +1407,7 @@
       .description {
         p {
           font-size: 1.075em;
-          font-family: "Roboto-Light";
+          font-weight: 300;
           & > a {
             color: rgb(50, 101, 148);
             border-bottom: 1px solid rgb(50, 101, 148);
@@ -1405,7 +1418,7 @@
   }
   .delivery {
     padding: 0 20px 50px;
-    font-family: "Roboto-Light";
+    font-weight: 300;
     .heading {
       p {
         font-size: 1.5em;
@@ -1414,25 +1427,11 @@
         font-family: "Roboto-Medium";
       }
     }
-    P {
+    p {
       font-size: 1.075em;
     }
     .form {
-      form {
-        font-size: 1.075em;
-        padding: 20px 0;
-        label {
-          color: rgb(50, 101, 148);
-          border-bottom: 1px solid rgb(50, 101, 148);
-          margin: 0 20px 0 0;
-        }
-        select {
-          font-size: 1.075em;
-          font-family: "Roboto-Light";
-          -moz-appearance: none;
-          appearance: none;
-        }
-      }
+      margin-top: 30px;
       .form__resoult {
         border: 1px solid rgb(231, 233, 238);
         border-radius: 6px;
@@ -1511,7 +1510,7 @@
     .description {
       P {
         font-size: 1.075em;
-        font-family: "Roboto-Light";
+        font-weight: 300;
         padding: 0 0 25px;
       }
     }
