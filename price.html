@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rst - price</title>
+    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="top__row-phone" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <span class="close__btn uk-modal-close"></span>
+            <ul class="top__row-phone">
+                <li>
+                    <span>Москва</span>
+                    <span><a href="tel:+7(495)178-07-17">+7 (495) 178-07-17</a></span>
+                </li>
+                <li>
+                    <span>СПБ</span>
+                    <span><a href="tel:+7(812)770-76-79">+7 (812) 770-76-79</a></span>
+                </li>
+                <li>
+                    <span>Общие</span>
+                    <span><a href="tel:+7(999)970-77-77 ">+7 (999) 970-77-77</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="top__row-mail" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <span class="close__btn uk-modal-close"></span>
+            <ul class="top__row-mail">
+                <li>
+                    <span><a href="mailto:r.s.msk@mail.ru">r.s.msk@mail.ru</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="top__row-watsUp" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <span class="close__btn uk-modal-close"></span>
+            <ul class="top__row-watsUp">
+                <li>
+                    <span>WhatsApp</span><span><a href="tel:+7(495)178-07-17">+7 (495) 178-07-17</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="top__row-telega" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <span class="close__btn uk-modal-close"></span>
+            <ul class="top__row-telega">
+                <li>
+                    <span>Telegram</span><span><a href="tel:+7(495)178-07-17">+7 (495) 178-07-17</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header -->
+    <header id="header">
+        <div class="top__row">
+            <div class="conteiner">
+                <ul class="mobile__show">
+                    <li>
+                        <a href="#top__row-phone" data-uk-modal><img src="img/mobile/Phone.png" alt="icon phone"></a>
+                    </li>
+                    <li>
+                        <a href="#top__row-mail" data-uk-modal><img src="img/mobile/mail.png" alt="icon mail"></a>
+                    </li>
+                    <li>
+                        <a href="#top__row-watsUp" data-uk-modal><img src="img/mobile/whatsapp.png"
+                                alt="icon whats-up"></a>
+                    </li>
+                    <li>
+                        <a href="#top__row-telega" data-uk-modal><img src="img/mobile/telega.png"
+                                alt="icon Telegram"></a>
+                    </li>
+                </ul>
+                <ul class="top__row-items mobile__hide">
+                    <li>
+                        <ul class="dropdown__phone">
+                            <li class="dropdown__show">
+                                <span class="pseudo first">Москва</span>
+                                <span><a href="tel:+7(495)178-07-17">+7 (495) 178-07-17</a></span>
+                            </li>
+                            <li class="dropdown__hide">
+                                <span class="pseudo">СПБ</span>
+                                <span><a href="tel:+7(812)770-76-79">+7 (812) 770-76-79</a></span>
+                                <span class="dropdown__hide-close"></span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile__hide">
+                        <span>Общие</span>
+                        <span><a href="tel:+7(999)970-77-77 ">+7 (999) 970-77-77</a></span>
+                    </li>
+                    <li>
+                        <a href="mailto:r.s.msk@mail.ru">r.s.msk@mail.ru</a>
+                    </li>
+                    <li>
+                        <ul class="social">
+                            <li>
+                                <a href="WhatsApp">WhatsApp</a>
+                            </li>
+                            <li>
+                                <a href="Telegram">Telegram</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="center__row">
+            <div class="conteiner">
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/logo.png" alt="Сертификационнаяи экспертная организация логотип">
+                    </a>
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Поиск по сайту">
+                        <button>
+                            <img src="img/icon/search_icon.png" alt="search__icon">
+                        </button>
+                    </form>
+                </div>
+                <div class="get_request">
+                    <button data-uk-modal="{target:'#get_request'}">Подать заявку на обучение</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile__menu mobile__show">
+            <a href="/" class="back__to"></a>
+            <a href="/" class="home"></a>
+            <div id="search"></div>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+        <nav class="conteiner">
+            <ul>
+                <li><a href="#">Программы обучения</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="conteiner">
+            <div class="left__sidebar">
+                <div class="left__sidebar-link cabinet">
+                    <a href="#">Вход<br> в личный кабинет</a>
+                </div>
+                <div class="programms">
+                    <ul>
+                        <li><a href="#">Выбрать программу<br> обучения</a></li>
+                        <li><a href="#">Перейти к обучению</a></li>
+                        <li><a href="#">Оплатить обучение</a></li>
+                        <li><a href="#">Часто задаваемые<br> вопросы</a></li>
+                        <li><a href="#">Наши лицензии и<br> аккредитации</a></li>
+                    </ul>
+                </div>
+                <div class="left__sidebar-link verify__certificate">
+                    <a href="#">Проверить<br> удостоверение</a>
+                </div>
+                <div class="our__activity">
+                    <h2>Наша деятельность</h2>
+                    <ul>
+                        <li><a href="#">Аутсорсинг</a></li>
+                        <li><a href="#">Дополнительные услуги</a></li>
+                        <li><a href="#">СОУТ</a></li>
+                        <li><a href="#">Оценка рисков</a></li>
+                        <li><a href="#">Внедрение системы<br> управления ОТ</a></li>
+                        <li><a href="#">Вебинары</a></li>
+                        <li><a href="#">Штрафы</a></li>
+                        <li><a href="#">Доставка и Оплата</a></li>
+                        <li><a href="#">Интернет магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h2>РегионСтандарт<br> в соцсетях</h2>
+                    <ul>
+                        <a href="">
+                            <li></li>
+                        </a>
+                        <a href="">
+                            <li></li>
+                        </a>
+                        <a href="">
+                            <li></li>
+                        </a>
+                        <a href="">
+                            <li></li>
+                        </a>
+                        <a href="">
+                            <li></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="popular">
+                    <h2>Популярные<br> програмы обучения</h2>
+                    <ul>
+                        <li><a href="#">Охрана труда</a></li>
+                        <li><a href="#">Пожарно-технический<br> минимум</a></li>
+                        <li><a href="#">Работа на высоте</a></li>
+                        <li><a href="#">ГО и ЧС</a></li>
+                        <li><a href="#">Первая помощь</a></li>
+                    </ul>
+                </div>
+                <div class="apply__education">
+                    <a href="#get_request" data-uk-modal>Подать заявку<br><span>на обучение</span></a>
+                </div>
+            </div>
+            <div class="content">
+                <section id="price">
+                    <div class="head">
+                        <h1>Цена на программы обучения</h1>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <input type="text" placeholder="Найти документ">
+                            <button>
+                                <img src="img/icon/search_icon.png" alt="search__icon">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="attention">
+                        <p>
+                            ПОЛУЧИ СКИДКУ! Чем больше программ и слушателей, тем больше скидка! Узнай свою скидку на
+                            выбраную программу! <span><a href="#">Узнать подробнее</a></span>
+                        </p>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><span>№<br>п/п</span></th>
+                                    <th><span>Название программы</span></th>
+                                    <th><span>Очное обучение, руб./чел.</span></th>
+                                    <th><span>Дистанцеонное обучение, руб./чел.
+                                            в зависимости от количества
+                                            слушателей или количества
+                                            выбраных курсов</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Краткосрочное обучение</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>1</span></td>
+                                    <td><span>Пожарно-технический минимум (птм) (8-28 ч)</span></td>
+                                    <td><span>1100</span></td>
+                                    <td><span>990</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>2</span></td>
+                                    <td><span>Пожарно-технический минимум (птм) (8-28 ч)</span></td>
+                                    <td><span>1100</span></td>
+                                    <td><span>990</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>4</span></td>
+                                    <td><span>Пожарно-технический минимум (птм) (8-28 ч)</span></td>
+                                    <td><span>1100</span></td>
+                                    <td><span>990</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>5</span></td>
+                                    <td><span>Пожарно-технический минимум (птм) (8-28 ч)</span></td>
+                                    <td><span>1100</span></td>
+                                    <td><span>990</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>6</span></td>
+                                    <td><span>Пожарно-технический минимум (птм) (8-28 ч)</span></td>
+                                    <td><span>1100</span></td>
+                                    <td><span>990</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>7</span></td>
+                                    <td><span>Пожарно-технический минимум (птм) (8-28 ч)</span></td>
+                                    <td><span>1100</span></td>
+                                    <td><span>990</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>8</span></td>
+                                    <td><span>Пожарно-технический минимум (птм) (8-28 ч)</span></td>
+                                    <td><span>1100</span></td>
+                                    <td><span>990</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>9</span></td>
+                                    <td><span>Пожарно-технический минимум (птм) (8-28 ч)</span></td>
+                                    <td><span>1100</span></td>
+                                    <td><span>990</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>10</span></td>
+                                    <td><span>Пожарно-технический минимум (птм) (8-28 ч)</span></td>
+                                    <td><span>1100</span></td>
+                                    <td><span>990</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>11</span></td>
+                                    <td><span>Пожарно-технический минимум (птм) (8-28 ч)</span></td>
+                                    <td><span>1100</span></td>
+                                    <td><span>990</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- footer  -->
+    <footer>
+        <div class="footer__top-row">
+            <div class="conteiner">
+                <p>Не нашли ответа на свой вопрос? Задайте его нашему специалисту!</p>
+                <a href="#question" data-uk-modal>Задать вопрос</a>
+            </div>
+        </div>
+        <div class="footer__bootom-row">
+            <div class="footer__items conteiner">
+                <div class="item logo">
+                    <img src="img/logo_footer.png" alt="Сертификационнаяи экспертная организация логотип">
+                    <a href="#apply__education" data-uk-modal>Заказать обратный звонок</a>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Наши лицензии</a></li>
+                        <li><a href="#">Программы обучения</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Адменистративная ответственность</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li><a href="#">Оказание услуг в области охраны труда</a></li>
+                        <li><a href="#">Аутсерсинг</a></li>
+                        <li><a href="#">Оценка рисков</a></li>
+                        <li><a href="#">СОУТ</a></li>
+                        <li><a href="#">Архив документов</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li class="adress">
+                            <address>
+                                <span>Адрес:</span> 115184, Москва, Большая Татарская улица, дом 21, строение 8, этаж
+                                2, комната 9
+                            </address>
+                        </li>
+                        <li class="phone">
+                            <a href="tel:+7(495)648-63-69">+7 (495) 648 63 69</a>
+                            <ul class="social">
+                                <a href="">
+                                    <li></li>
+                                </a>
+                                <a href="">
+                                    <li></li>
+                                </a>
+                                <a href="">
+                                    <li></li>
+                                </a>
+                            </ul>
+                        </li>
+                        <li class="mail">
+                            <a href="mailto:r.s.msk@mail.ru">r.s.msk@mail.ru</a>
+                            <ul class="social">
+                                <a href="">
+                                    <li></li>
+                                </a>
+                                <a href="">
+                                    <li></li>
+                                </a>
+                                <a href="">
+                                    <li></li>
+                                </a>
+                                <a href="">
+                                    <li></li>
+                                </a>
+                                <a href="">
+                                    <li></li>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="signature conteiner">
+                <p>© 2019 | РегионСтандарт</p>
+            </div>
+        </div>
+    </footer>
+    <!-- modal -->
+    <div id="get_request" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <div class="header">
+                <h3>Подать заявку на обучение</h3>
+                <span class="close__btn uk-modal-close"></span>
+            </div>
+            <div class="modal__body">
+                <form>
+                    <input type="text" placeholder="Имя:*">
+                    <input type="tel" placeholder="Телефон:*">
+                    <input type="email" placeholder="E-mail:*">
+                    <p><span>*</span> - Обязательные поля для заполнения</p>
+                    <p class="text">Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных
+                        даных.</p>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="question" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <div class="header">
+                <h3>задать вопрос</h3>
+                <span class="close__btn uk-modal-close"></span>
+            </div>
+            <div class="modal__body">
+                <form>
+                    <input type="text" placeholder="Имя:*">
+                    <input type="tel" placeholder="Телефон:*">
+                    <input type="email" placeholder="E-mail:*">
+                    <p><span>*</span> - Обязательные поля для заполнения</p>
+                    <p class="text">Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных
+                        даных.</p>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="apply__education" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <div class="header">
+                <h3>заказать обратный звонок</h3>
+                <span class="close__btn uk-modal-close"></span>
+            </div>
+            <div class="modal__body">
+                <form>
+                    <input type="text" placeholder="Имя:*">
+                    <input type="tel" placeholder="Телефон:*">
+                    <input type="email" placeholder="E-mail:*">
+                    <p><span>*</span> - Обязательные поля для заполнения</p>
+                    <p class="text">Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных
+                        даных.</p>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

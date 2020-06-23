@@ -886,6 +886,150 @@
   }
 }
 
+// programms
+#programms-category {
+  @include info;
+  .head {
+    display: flex;
+    align-items: center;
+    height: 76px;
+    background-color: rgb(246, 247, 249);
+    border-radius: 3px;
+    position: relative;
+    margin: 3px 0 30px;
+    &::before {
+      content: url(../img/content/arhiv/icon_pseudo.png);
+      position: absolute;
+    }
+    &::after {
+      content: url(../img/programms/programms.png);
+      position: absolute;
+      left: 15px;
+    }
+    h1 {
+      padding-left: 115px;
+      position: relative;
+    }
+  }
+  .search {
+    padding: 0 15px 30px;
+    width: 100%;
+    form {
+      position: relative;
+      input {
+        @include input;
+        padding: 8px 13px;
+        @include transition;
+        &::placeholder {
+          color: $color_search-color;
+          font-size: 0.9em;
+        }
+        &:focus {
+          @include boxShadow-input;
+        }
+      }
+      button {
+        position: absolute;
+        background-color: transparent;
+        top: 9px;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .programms__items {
+    .item__category {
+      background-image: url(../img/content/programms-category/bg-1.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 42%;
+      background-size: contain;
+      padding: 13px 0;
+      height: 240px;
+      border-radius: 4px;
+      @include transition;
+      margin-bottom: 30px;
+      &:hover {
+        @include boxShadow;
+        background-position: 50% -46%;
+        .category-name {
+          h2 {
+            color: rgb(36, 82, 125);
+          }
+          .img {
+            &::before {
+              opacity: 1;
+            }
+          }
+        }
+        .btn {
+          a {
+            color: $color_white;
+            background-color: $color_top_row-color;
+          }
+        }
+      }
+      .category-name {
+        .img {
+          background-color: white;
+          width: 85px;
+          height: 85px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          margin: 0 auto;
+          padding: 17px;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            opacity: 0;
+            top: -7px;
+            left: -7px;
+            z-index: -1;
+            background-color: rgb(247, 249, 252);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            padding: 7px;
+            @include transition;
+          }
+          img {
+            width: 50px;
+            z-index: 1;
+          }
+        }
+        h2 {
+          font-family: "Roboto-Light";
+          font-weight: 300;
+          font-size: 30px;
+          color: rgb(10, 10, 10);
+          text-align: center;
+          margin-top: 20px;
+          @include transition;
+        }
+      }
+      .btn {
+        a {
+          margin: 30px auto 0;
+          display: block;
+          width: 225px;
+          height: 45px;
+          padding: 15px 20px;
+          text-align: center;
+          text-transform: uppercase;
+          color: $color_top_row-color;
+          background-color: $color_white;
+          border-radius: 5px;
+          font-size: 0.8em;
+          border: 1px solid $color_top_row-color;
+          @include transition;
+          // transform: translateY(25px);
+        }
+      }
+    }
+  }
+}
+
 // article
 #article {
   padding: 0 20px;
@@ -1529,6 +1673,145 @@
         border-left: 9px solid rgb(50, 101, 148);
         top: 3px;
         left: 0;
+      }
+    }
+  }
+}
+// price
+#price {
+  .head {
+    display: flex;
+    align-items: center;
+    height: 76px;
+    background-color: rgb(246, 247, 249);
+    border-radius: 3px;
+    position: relative;
+    margin: 3px 0 30px;
+    &::before {
+      content: url(../img/content/arhiv/icon_pseudo.png);
+      position: absolute;
+    }
+    &::after {
+      content: url(../img/content/price/icon_price.png);
+      position: absolute;
+      left: 15px;
+    }
+    h1 {
+      padding-left: 115px;
+      position: relative;
+    }
+  }
+  .search {
+    padding: 0 15px 0px;
+    width: 100%;
+    form {
+      position: relative;
+      input {
+        @include input;
+        padding: 8px 13px;
+        @include transition;
+        &::placeholder {
+          color: $color_search-color;
+          font-size: 0.9em;
+        }
+        &:focus {
+          @include boxShadow-input;
+        }
+      }
+      button {
+        position: absolute;
+        background-color: transparent;
+        top: 9px;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .attention {
+    p {
+      color: rgb(40, 40, 40);
+      line-height: 1.4;
+    }
+    span {
+      margin-left: 20px;
+      a {
+        color: rgb(50, 101, 148);
+      }
+    }
+  }
+  .table {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      thead {
+        background-color: rgb(50, 101, 148);
+        color: $color_white;
+        font-size: 0.95em;
+        font-weight: bold;
+        tr {
+          display: grid;
+          grid-template-columns: 44px 2fr 1fr 2fr;
+          align-items: center;
+          justify-content: center;
+          th {
+            border-right: 1px solid rgb(95, 134, 171);
+            text-align: center;
+            padding: 13px 8px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:last-child {
+              border-right: none;
+              border-radius: 0 10px 10px 0;
+            }
+          }
+        }
+      }
+      tbody {
+        color: rgb(43, 43, 35);
+        tr {
+          display: grid;
+          grid-template-columns: 44px 2fr 1fr 2fr;
+          align-items: baseline;
+          border: 1px solid rgb(231, 233, 238);
+          border-top: none;
+          &:nth-child(1) {
+            grid-template-columns: 1fr;
+            justify-items: start;
+            background-color: rgb(246, 247, 249);
+            padding: 0 20px;
+            font-size: 1.25em;
+            color: rgb(40, 40, 40);
+            height: 70px;
+            border: none;
+          }
+          td {
+            border-right: 1px solid rgb(231, 233, 238);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            text-align: center;
+            span {
+              width: 100%;
+              height: 100%;
+            }
+            &:nth-child(2) {
+              font-family: "Roboto-Light";
+              font-size: 14px;
+              line-height: 1.4;
+              span {
+                max-width: 255px;
+                text-align: left;
+              }
+            }
+            &:last-child {
+              border-right: none;
+            }
+          }
+        }
       }
     }
   }

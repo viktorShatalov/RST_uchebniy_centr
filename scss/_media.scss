@@ -800,6 +800,7 @@
       h1 {
         font-size: 1.55em;
         line-height: 1;
+        text-align: left;
       }
     }
     .item__category {
@@ -900,8 +901,22 @@
         }
       }
     }
-    .articles-see__also{
+    .articles-see__also {
       text-align: center;
+    }
+  }
+  #price {
+    .head {
+      h1 {
+        font-size: 1.55em;
+        line-height: 1;
+        text-align: left;
+      }
+    }
+  }
+  #programms-category {
+    .head h1 {
+      line-height: 1;
     }
   }
 }

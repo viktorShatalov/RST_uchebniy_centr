@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rst - programms</title>
+    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="top__row">
+            <div class="conteiner">
+                <ul class="mobile__show">
+                    <li>
+                        <a href="#top__row-phone" data-uk-modal><img src="img/mobile/Phone.png" alt="icon phone"></a>
+                    </li>
+                    <li>
+                        <a href="#top__row-mail" data-uk-modal><img src="img/mobile/mail.png" alt="icon mail"></a>
+                    </li>
+                    <li>
+                        <a href="#top__row-watsUp" data-uk-modal><img src="img/mobile/whatsapp.png"
+                                alt="icon whats-up"></a>
+                    </li>
+                    <li>
+                        <a href="#top__row-telega" data-uk-modal><img src="img/mobile/telega.png"
+                                alt="icon Telegram"></a>
+                    </li>
+                </ul>
+                <ul class="top__row-items mobile__hide">
+                    <li>
+                        <ul class="dropdown__phone">
+                            <li class="dropdown__show">
+                                <span class="pseudo first">Москва</span>
+                                <span><a href="tel:+7(495)178-07-17">+7 (495) 178-07-17</a></span>
+                            </li>
+                            <li class="dropdown__hide">
+                                <span class="pseudo">СПБ</span>
+                                <span><a href="tel:+7(812)770-76-79">+7 (812) 770-76-79</a></span>
+                                <span class="dropdown__hide-close"></span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile__hide">
+                        <span>Общие</span>
+                        <span><a href="tel:+7(999)970-77-77 ">+7 (999) 970-77-77</a></span>
+                    </li>
+                    <li>
+                        <a href="mailto:r.s.msk@mail.ru">r.s.msk@mail.ru</a>
+                    </li>
+                    <li>
+                        <ul class="social">
+                            <li>
+                                <a href="WhatsApp">WhatsApp</a>
+                            </li>
+                            <li>
+                                <a href="Telegram">Telegram</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="center__row">
+            <div class="conteiner">
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/logo.png" alt="Сертификационнаяи экспертная организация логотип">
+                    </a>
+                </div>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Поиск по сайту">
+                        <button>
+                            <img src="img/icon/search_icon.png" alt="search__icon">
+                        </button>
+                    </form>
+                </div>
+                <div class="get_request">
+                    <button data-uk-modal="{target:'#get_request'}">Подать заявку на обучение</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile__menu mobile__show">
+            <a href="/" class="back__to"></a>
+            <a href="/" class="home"></a>
+            <div id="search"></div>
+            <div class="burger">
+                <span></span>
+            </div>
+        </div>
+        <nav class="conteiner">
+            <ul>
+                <li><a href="#">Программы обучения</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- breadcumps -->
+    <div id="breadcumbs">
+        <ul class="conteiner">
+            <li>
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                <a href="#">Название страницы</a>
+            </li>
+        </ul>
+    </div>
+    <!-- main -->
+    <main>
+        <div class="conteiner">
+            <div class="left__sidebar">
+                <div class="left__sidebar-link cabinet">
+                    <a href="#">Вход<br> в личный кабинет</a>
+                </div>
+                <div class="our__activity">
+                    <h2>Наша деятельность</h2>
+                    <ul>
+                        <li><a href="#">Аутсорсинг</a></li>
+                        <li><a href="#">Дополнительные услуги</a></li>
+                        <li><a href="#">СОУТ</a></li>
+                        <li><a href="#">Оценка рисков</a></li>
+                        <li><a href="#">Внедрение системы<br> управления ОТ</a></li>
+                        <li><a href="#">Вебинары</a></li>
+                        <li><a href="#">Штрафы</a></li>
+                        <li><a href="#">Доставка и Оплата</a></li>
+                        <li><a href="#">Интернет магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="popular">
+                    <h2>Популярные<br> програмы обучения</h2>
+                    <ul>
+                        <li><a href="#">Охрана труда</a></li>
+                        <li><a href="#">Пожарно-технический<br> минимум</a></li>
+                        <li><a href="#">Работа на высоте</a></li>
+                        <li><a href="#">ГО и ЧС</a></li>
+                        <li><a href="#">Первая помощь</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h2>РегионСтандарт<br> в соцсетях</h2>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="apply__education">
+                    <a href="#get_request" data-uk-modal>Подать заявку<br><span>на обучение</span></a>
+                </div>
+            </div>
+            <div class="content">
+                <section id="programms-category">
+                    <div class="head">
+                        <h1>Программы обучения</h1>
+                    </div>
+                    <div class="search">
+                        <form>
+                            <input type="text" placeholder="Найти документ">
+                            <button>
+                                <img src="img/icon/search_icon.png" alt="search__icon">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="programms__items">
+                        <div id="ohrana__truda" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/ohrana_truda.png" alt="icon Охрана труда">
+                                </div>
+                                <h2>Охрана труда</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="pogarka" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/minimum.png" alt="icon Пожарная безопасность">
+                                </div>
+                                <h2>Пожарно-технический минимум</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="pervaya_pomosh" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/first_help.png" alt="icon Первая помощь">
+                                </div>
+                                <h2>Первая помощь</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="GO" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/GO_CH-S.png" alt="icon ГО и ЧС">
+                                </div>
+                                <h2>ГО и ЧС</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="rabochie_profesii" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/14.png" alt="icon Рабочие профессии">
+                                </div>
+                                <h2>Рабочие профессии</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="bezopasnost_DD" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/road_safe.png" alt="icon Безопасность дорожнего движения">
+                                </div>
+                                <h2>Безопасность дорожнего движения</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="rabota_na_visote" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/height_save.png" alt="icon Работа на высоте">
+                                </div>
+                                <h2>Работа на высоте</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="transport_bezopasnost" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/transport_safety.png" alt="icon Транспортная безопасность">
+                                </div>
+                                <h2>Транспортная безопасность</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="prom_bezopasnost" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/17.png" alt="icon Промышленная безопасность">
+                                </div>
+                                <h2>Промышленная безопасность</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="nuclear_bezopasnost" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/radiation.png" alt="icon Радиацеонная безопасность">
+                                </div>
+                                <h2>Радиацеонная безопасность</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="eco_bezopasnost" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/ecology.png" alt="icon Экологическая безопасность">
+                                </div>
+                                <h2>Экологическая безопасность</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="electro_bezopasnost" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/energy_safety.png" alt="icon Электробезопасность">
+                                </div>
+                                <h2>Электробезопасность</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="cvalifikaciya" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/higer_cvalification_2.png" alt="icon Повышение квалификации">
+                                </div>
+                                <h2>Повышение квалификации</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                        <div id="all" class="item__category">
+                            <div class="category-name">
+                                <div class="img">
+                                    <img src="img/content/higer_cvalification_2.png" alt="icon Все виды обучения">
+                                </div>
+                                <h2>Все виды обучения</h2>
+                            </div>
+                            <div class="btn">
+                                <a href="#">Перейти к обучению</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- footer  -->
+    <footer>
+        <div class="footer__top-row">
+            <div class="conteiner">
+                <p>Не нашли ответа на свой вопрос? Задайте его нашему специалисту!</p>
+                <a href="#question" data-uk-modal>Задать вопрос</a>
+            </div>
+        </div>
+        <div class="footer__bootom-row">
+            <div class="footer__items conteiner">
+                <div class="item logo">
+                    <img src="img/logo_footer.png" alt="Сертификационнаяи экспертная организация логотип">
+                    <a href="#apply__education" data-uk-modal>Заказать обратный звонок</a>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Наши лицензии</a></li>
+                        <li><a href="#">Программы обучения</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Адменистративная ответственность</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li><a href="#">Оказание услуг в области охраны труда</a></li>
+                        <li><a href="#">Аутсерсинг</a></li>
+                        <li><a href="#">Оценка рисков</a></li>
+                        <li><a href="#">СОУТ</a></li>
+                        <li><a href="#">Архив документов</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li class="adress">
+                            <address>
+                                <span>Адрес:</span> 115184, Москва, Большая Татарская улица, дом 21, строение 8, этаж
+                                2, комната 9
+                            </address>
+                        </li>
+                        <li class="phone">
+                            <a href="tel:+7(495)648-63-69">+7 (495) 648 63 69</a>
+                            <ul class="social">
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li class="mail">
+                            <a href="mailto:r.s.msk@mail.ru">r.s.msk@mail.ru</a>
+                            <ul class="social">
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="signature conteiner">
+                <p>© 2019 | РегионСтандарт</p>
+            </div>
+        </div>
+    </footer>
+    <!-- modal -->
+    <div id="get_request" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <div class="header">
+                <h3>Подать заявку на обучение</h3>
+                <span class="close__btn uk-modal-close"></span>
+            </div>
+            <div class="modal__body">
+                <form>
+                    <input type="text" placeholder="Имя:*">
+                    <input type="tel" placeholder="Телефон:*">
+                    <input type="email" placeholder="E-mail:*">
+                    <p><span>*</span> - Обязательные поля для заполнения</p>
+                    <p class="text">Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных
+                        даных.</p>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="question" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <div class="header">
+                <h3>задать вопрос</h3>
+                <span class="close__btn uk-modal-close"></span>
+            </div>
+            <div class="modal__body">
+                <form>
+                    <input type="text" placeholder="Имя:*">
+                    <input type="tel" placeholder="Телефон:*">
+                    <input type="email" placeholder="E-mail:*">
+                    <p><span>*</span> - Обязательные поля для заполнения</p>
+                    <p class="text">Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных
+                        даных.</p>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="apply__education" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <div class="header">
+                <h3>заказать обратный звонок</h3>
+                <span class="close__btn uk-modal-close"></span>
+            </div>
+            <div class="modal__body">
+                <form>
+                    <input type="text" placeholder="Имя:*">
+                    <input type="tel" placeholder="Телефон:*">
+                    <input type="email" placeholder="E-mail:*">
+                    <p><span>*</span> - Обязательные поля для заполнения</p>
+                    <p class="text">Нажимая на кнопку, вы принимаете Положение и Согласие на обработку персональных
+                        даных.</p>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
