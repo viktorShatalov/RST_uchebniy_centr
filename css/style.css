@@ -4392,7 +4392,7 @@ footer .signature {
     height: 100%;
     top: -20px;
     left: 0;
-    z-index: 1;
+    z-index: 5;
     position: absolute;
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
@@ -5103,6 +5103,51 @@ footer .signature {
     font-size: 1.55em;
     line-height: 1;
     text-align: left;
+  }
+  #price .mobile__table .heading h2 {
+    font-family: "Roboto-Medium";
+    font-size: 23px;
+    color: white;
+    background-color: #326594;
+    padding: 25px 15px;
+    text-align: center;
+    font-weight: normal;
+  }
+  #price .mobile__table .heading p {
+    text-align: center;
+    background-color: #f6f7f9;
+    font-size: 23px;
+    color: #326594;
+    padding: 23px 20px;
+  }
+  #price .mobile__table .mobile__table-items .item {
+    padding: 50px 33px;
+    border-bottom: 1px solid #dce3e9;
+  }
+  #price .mobile__table .mobile__table-items .item h3 {
+    font-size: 19px;
+    color: #212121;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-align: left;
+    position: relative;
+  }
+  #price .mobile__table .mobile__table-items .item h3::before {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-left: 9px solid #326594;
+    top: 3px;
+    left: -15px;
+  }
+  #price .mobile__table .mobile__table-items .item p {
+    color: #4b4b4b;
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  #price .mobile__table .mobile__table-items .item p span {
+    color: #326594;
+    margin-left: 22px;
   }
   #programms-category .head h1 {
     line-height: 1;

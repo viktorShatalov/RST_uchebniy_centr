@@ -143,7 +143,7 @@
       height: 100%;
       top: -20px;
       left: 0;
-      z-index: 1;
+      z-index: 5;
       position: absolute;
       transform: scaleY(0);
       @include transition;
@@ -911,6 +911,57 @@
         font-size: 1.55em;
         line-height: 1;
         text-align: left;
+      }
+    }
+    .mobile__table {
+      .heading {
+        h2 {
+          font-family: "Roboto-Medium";
+          font-size: 23px;
+          color: white;
+          background-color: rgb(50, 101, 148);
+          padding: 25px 15px;
+          text-align: center;
+          font-weight: normal;
+        }
+        p {
+          text-align: center;
+          background-color: rgb(246, 247, 249);
+          font-size: 23px;
+          color: rgb(50, 101, 148);
+          padding: 23px 20px;
+        }
+      }
+      .mobile__table-items {
+        .item {
+          padding: 50px 33px;
+          border-bottom: 1px solid rgb(220, 227, 233);
+          h3 {
+            font-size: 19px;
+            color: rgb(33, 33, 33);
+            margin-bottom: 30px;
+            text-decoration: underline;
+            text-align: left;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              border: 8px solid transparent;
+              border-left: 9px solid rgb(50, 101, 148);
+              top: 3px;
+              left: -15px;
+            }
+          }
+          p {
+            color: rgb(75, 75, 75);
+            font-size: 17px;
+            margin-bottom: 10px;
+            span {
+              color: rgb(50, 101, 148);
+              margin-left: 22px;
+            }
+          }
+        }
       }
     }
   }
