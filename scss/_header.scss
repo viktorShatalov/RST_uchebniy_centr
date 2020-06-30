@@ -75,15 +75,15 @@
         position: absolute;
         top: 3px;
         right: 3px;
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         cursor: pointer;
         &::after,
         &::before {
           content: "";
           position: absolute;
-          top: 4px;
-          width: 10px;
+          top: 6px;
+          width: 15px;
           height: 2px;
           background-color: rgb(69, 109, 178);
           transform: rotate(-45deg);
@@ -144,6 +144,9 @@
   .center__row {
     padding: 50px 0;
     border-bottom: 1px solid $color_search-color;
+    .logo{
+      padding: 0 15px;
+    }
   }
   .search {
     max-width: 380px;

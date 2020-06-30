@@ -1,4 +1,14 @@
 @font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../fonts/fontsUIkit/FontAwesome.otf") format("opentype");
+  src: url("../fonts/fontsUIkit/fontawesome-webfont.ttf") format("truetype");
+  src: url("../fonts/fontsUIkit/fontawesome-webfont.woff") format("woff");
+  src: url("../fonts/fontsUIkit/fontawesome-webfont.woff2") format("woff2");
+}
+@font-face {
   font-family: "Roboto-Regular";
   font-style: normal;
   font-weight: normal;

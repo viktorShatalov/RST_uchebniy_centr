@@ -20,13 +20,15 @@ jQuery(document).ready(function () {
     });
 
     // Перемещаю элементы 
+    jQuery('#header .search form input').attr("placeholder", 'Поиск по сайту');
+    jQuery('#price .search form input').attr("placeholder", 'Поиск...');
 
     if (window.innerWidth < 420) {
         jQuery('footer .footer__top-row .conteiner p').html('Не нашли ответа на свой' + "<br>" + "вопрос?" + "<br>" + "Задайте его нашему специалисту!")
         jQuery('.form__resoult-items .item:nth-child(1) .item-rigth p').html('Цена и сроки доставки:' + "<br>" + "0 руб. / 8-11 дн.")
     }
-    if (window.innerWidth < 768) {
-        jQuery('.search form input').attr("placeholder", 'Поиск...')
+    if (window.innerWidth < 769) {
+        jQuery('.search form input').attr("placeholder", 'Поиск...');
         jQuery('.mobile__menu #search').append(jQuery('.center__row .search'));
     }
 

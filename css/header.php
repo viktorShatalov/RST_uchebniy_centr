@@ -109,10 +109,10 @@
                     <li>
                         <ul class="social">
                             <li>
-                                <a href="<?php echo carbon_get_theme_option('w_a') ?>">WhatsApp</a>
+                                <a href="tel:<?php echo carbon_get_theme_option('w_a') ?>">WhatsApp</a>
                             </li>
                             <li>
-                                <a href="<?php echo carbon_get_theme_option('telega') ?>">Telegram</a>
+                                <a href="tel:<?php echo carbon_get_theme_option('telega') ?>">Telegram</a>
                             </li>
                         </ul>
                     </li>

@@ -17,8 +17,12 @@
       display: grid;
       grid-template-columns: 1fr 2fr;
       grid-gap: 15px;
+      text-align: left;
       margin-bottom: 25px;
       span {
+        strong {
+          font-weight: normal !important;
+        }
         &:nth-child(2) {
           font-family: "Roboto-Light";
           color: rgb(105, 105, 105);
@@ -29,6 +33,9 @@
   .info {
     margin-bottom: 55px;
     padding: 0 20px;
+    strong {
+      font-weight: normal;
+    }
   }
   .center__row {
     p {
@@ -61,6 +68,9 @@
     border-bottom: none;
     p {
       padding: 55px 0 30px;
+      strong {
+        font-weight: normal;
+      }
       span {
         color: rgb(74, 112, 179);
       }

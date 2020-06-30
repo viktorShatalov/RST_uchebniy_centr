@@ -1,5 +1,12 @@
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 880px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1140px) {
+  main .popular h2 {
+    font-size: 1.125em;
+  }
+  body,
+  html {
+    overflow-x: hidden;
+  }
 }
 
 // Mobile *******************************************************************************************
@@ -226,8 +233,10 @@
           }
         }
         &:nth-child(3) {
-          .item:nth-child(1) {
-            max-width: 100%;
+          a:nth-child(1) {
+            .item {
+              max-width: 100%;
+            }
           }
         }
       }
@@ -303,6 +312,7 @@
           &:nth-child(2),
           &:nth-child(3) {
             ul {
+              margin: 0;
               li {
                 max-width: 100%;
               }
@@ -431,11 +441,17 @@
         p {
           font-size: 1.2rem;
           line-height: 1.1;
-          padding-top: 10px;
         }
       }
     }
+    .regulated .regulated__items {
+      justify-content: center;
+    }
     .switcher {
+      .switch_btn,
+      #switcher li.uk-active {
+        justify-content: center;
+      }
       .flex {
         text-align: center;
         p.price {
@@ -492,6 +508,7 @@
       }
       img {
         content: url(../img/mobile/4.jpg);
+        width: 100vw;
       }
     }
     .get_request-awesome {
@@ -522,17 +539,23 @@
         width: 95%;
         margin: 0 auto;
       }
+      .flex {
+        .img,
+        .float {
+          flex: 0 1 100%;
+        }
+        .get_request {
+          a {
+            padding: 13px 0 !important;
+          }
+        }
+      }
       .documents__item {
         &:nth-child(2) {
           flex-direction: column-reverse;
         }
         &:nth-child(3) {
           flex-direction: column;
-          .get_request {
-            a {
-              padding: 13px 0 !important;
-            }
-          }
         }
         p {
           word-break: break-all;
@@ -652,7 +675,10 @@
       max-width: 100%;
     }
   }
-  #outsorsing {
+  #outsorsing,
+  #SOUT,
+  #ocenka_riskov,
+  #uslugi_ohrana_truda {
     & > img {
       content: url(../img/mobile/outsors.jpg);
       width: 100vw;
@@ -739,6 +765,21 @@
     }
     .last__description {
       padding: 0 20px;
+    }
+  }
+  #SOUT {
+    & > img {
+      content: url(../img/slider/mobile_content/SOUT.jpg);
+    }
+  }
+  #ocenka_riskov {
+    & > img {
+      content: url(../img/slider/mobile_content/profesional.jpg);
+    }
+  }
+  #uslugi_ohrana_truda {
+    & > img {
+      content: url(../img/slider/mobile_content/system_of_ohrana_truda.jpg);
     }
   }
   #catalog__articles {

@@ -181,3 +181,35 @@ $color_modal-p: rgb(138, 138, 138);
     }
   }
 }
+.wpcf7-form-control-wrap {
+  display: block;
+}
+span.wpcf7-not-valid-tip {
+  position: absolute;
+  top: 27px;
+  left: 30%;
+  font-size: 12px;
+}
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing,
+div.wpcf7-mail-sent-ok {
+  border: none;
+}
+div.wpcf7-response-output {
+  margin: 0;
+  padding: 22px 10px;
+  background-color: rgb(247, 249, 252);
+  width: 100%;
+  border-bottom: 1px solid $color_modal-border;
+  border-top: 1px solid $color_modal-border;
+  color: $color_close-bg;
+}
+div.wpcf7 .ajax-loader {
+  margin: 0 -16px 0 0px;
+}
+
+#wpcf7-f500-o1 {
+  div.wpcf7-response-output {
+    border: none !important;
+  }
+}

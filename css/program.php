@@ -21,6 +21,8 @@ Template post type: post
                         'container' => false,        // Убираем контейнер у меню, можно добавить свой
                         'items_wrap' => '%3$s', // Убираем обёртку <ul>
                         'menu_class' => '',
+                        'link_before' => '<span>',
+                        'link_after'  => '</span>'
                     ]);
                     ?>
                 </ul>
@@ -34,6 +36,8 @@ Template post type: post
                         'container' => false,        // Убираем контейнер у меню, можно добавить свой
                         'items_wrap' => '%3$s', // Убираем обёртку <ul>
                         'menu_class' => '',
+                        'link_before' => '<span>',
+                        'link_after'  => '</span>'
                     ]);
                     ?>
                 </ul>
@@ -67,6 +71,8 @@ Template post type: post
                         'container' => false,        // Убираем контейнер у меню, можно добавить свой
                         'items_wrap' => '%3$s', // Убираем обёртку <ul>
                         'menu_class' => '',
+                        'link_before' => '<span>',
+                        'link_after'  => '</span>'
                     ]);
                     ?>
                 </ul>
@@ -103,7 +109,7 @@ Template post type: post
                                     </p>
                                 </div>
                                 <div class="get_request">
-                                    <button data-uk-modal="{target:'#get_request'}">Оставить
+                                    <button class="uk-button" data-uk-modal="{target:'#get_request'}">Оставить
                                         заявку
                                     </button>
                                 </div>
@@ -116,7 +122,7 @@ Template post type: post
                                     </p>
                                 </div>
                                 <div class="get_request">
-                                    <button data-uk-modal="{target:'#get_request'}">Оставить
+                                    <button class="uk-button" data-uk-modal="{target:'#get_request'}">Оставить
                                         заявку
                                     </button>
                                 </div>
@@ -163,7 +169,7 @@ Template post type: post
                     </div>
                     <div class="get_request-awesome">
                         <p>Для получения подробной информации, оставьте заявку:</p>
-                        <button data-uk-modal="{target:'#get_request'}">Оставить заявку</button>
+                        <button class="uk-button" data-uk-modal="{target:'#get_request'}">Оставить заявку</button>
                     </div>
                     <div class="regulated">
                         <div class="regulated__items">
@@ -177,13 +183,13 @@ Template post type: post
                             <div class="item">
                                 <img src="/wp-content/uploads/2020/06/review2.png" alt="icon Отзывы наших учащихся о нашем
                                     учебном центре">
-                                <p><a href="<?php echo carbon_get_the_post_meta('prog_otz_url') ?>">Отзывы наших
+                                <p><a href="/category/reviews/">Отзывы наших
                                         учащихся о нашем учебном центре</a></p>
                             </div>
                             <div class="item">
                                 <img src="/wp-content/uploads/2020/06/review3.png" alt="icon Ответственность за отсутствие
                                     обучения">
-                                <p><a href="<?php echo carbon_get_the_post_meta('prog_otvetst_url') ?>">Ответственность
+                                <p><a href="/administrativnaya-otvetstvennost/">Ответственность
                                         за отсутствие обучения</a></p>
                             </div>
                             <div class="item">
@@ -197,29 +203,27 @@ Template post type: post
                     </div>
                     <div class="documents">
                         <p>Удостоверение о прохождении курсов по ПТМ</p>
-                        <div class="documents__item">
-                            <div class="img">
+                        <div class="flex">
+                            <div class="item img">
                                 <a href="<?php echo carbon_get_the_post_meta('prog_udost1') ?>" data-uk-lightbox title="Удостоверение о прохождении курсов">
                                     <img src="<?php echo carbon_get_the_post_meta('prog_udost1') ?>">
                                 </a>
-                            </div>
-                            <div class="description">
-                                <p>
-                                    <?php echo carbon_get_the_post_meta('prog_udost_text1') ?>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="documents__item">
-                            <div class="img">
                                 <a href="<?php echo carbon_get_the_post_meta('prog_udost2') ?>" data-uk-lightbox title="сертификат о прохождении курсов">
                                     <img src="<?php echo carbon_get_the_post_meta('prog_udost2') ?>">
                                 </a>
                             </div>
-                            <div class=" description">
-                                <p>
-                                    <?php echo carbon_get_the_post_meta('prog_udost_text2') ?>
-                                </p>
-                                <div class="get_request">
+                            <div class="float">
+                                <div class="item description">
+                                    <p>
+                                        <?php echo carbon_get_the_post_meta('prog_udost_text1') ?>
+                                    </p>
+                                </div>
+                                <div class="item description">
+                                    <p>
+                                        <?php echo carbon_get_the_post_meta('prog_udost_text2') ?>
+                                    </p>
+                                </div>
+                                <div class="item get_request">
                                     <a href="/category/dokumenty-ob-obrazovanii/">Узнать подробнее об удостоверении</a>
                                 </div>
                             </div>
@@ -233,15 +237,6 @@ Template post type: post
                             после сдачи экзаменационного теста (при условии подтверждения оплаты)
                         </p>
                         <div class="form">
-                            <!--                            <form>-->
-                            <!--                                <label for="region">Выбрать регион:</label>-->
-                            <!--                                <select name="region" id="region">-->
-                            <!--                                    <option value="Белгородская область">Белгородская область</option>-->
-                            <!--                                    <option value="Белгородская область">Белгородская область</option>-->
-                            <!--                                    <option value="Белгородская область">Белгородская область</option>-->
-                            <!--                                    <option value="Белгородская область">Белгородская область</option>-->
-                            <!--                                </select>-->
-                            <!--                            </form>-->
                             <br>
                             <div class="form__resoult">
                                 <div class="form__resoult-heading">
@@ -285,10 +280,8 @@ Template post type: post
                                 <div class="description">
                                     <p>Вы можете оплатить наши образовательные услуги следующими способами:</p>
                                 </div>
-                                <div class="flex">
-                                    <span><a href="<?php echo carbon_get_the_post_meta('prog_card_url') ?>">Банковской картой</a> (только для физлиц)</span>
-                                    <span><a href="<?php echo carbon_get_the_post_meta('prog_bank_url') ?>">Банковским переводом</a></span>
-                                </div>
+                                <span><a href="<?php echo carbon_get_the_post_meta('prog_card_url') ?>">Банковской картой</a> (только для физ.лиц)</span>
+                                <span><a href="<?php echo carbon_get_the_post_meta('prog_bank_url') ?>">Банковским переводом</a></span>
                             </div>
                         </div>
                     </div>
@@ -296,10 +289,5 @@ Template post type: post
             </section>
         </div>
     </div>
-    <script>
-        jQuery(document).ready(function() {
-            jQuery('#breadcumbs>ul>li:nth-child(3)').remove();
-        });
-    </script>
 </main>
 <?php get_footer(); ?>
